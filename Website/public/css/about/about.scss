@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$font: Montserrat;
+$bgColor: linear-gradient(#000c2d, #00195e);
+$color: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: $color;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: $bgColor;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .navBar {
+        height: 12vh;
+        width: 100vw;
+        background-color: none; //TODO Bg blur koyualacak
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 0 0 3rem;
+            padding: 0;
+            color: $color;
+            text-decoration: none;
+            height: 12vh;
+            align-items: center;
+
+            #imgTop {
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+            }
+
+            img {
+                margin: 1vw 0 0 0;
+                height: 6rem;
+                width: auto;
+                position: absolute;
+                transition: visibility .2s, opacity 0.2s linear;
+            }
+
+            &:hover #imgTop {
+                visibility: unset;
+                opacity: 1;
+            }
+
+            &:hover #imgBot {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        .right {
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            #navList {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+
+                #navListItem {
+                    display: flex;
+                    margin-right: 2.5rem;
+                    align-items: center;
+
+                    a {
+                        font-weight: 600;
+                        font-size: 2rem;
+                        color: $color;
+                        text-decoration: none;
+
+                        span {
+                            background-color: $color;
+                            color: #000c2d;
+                            font-size: 2rem;
+                            padding: .5rem 2.5rem .7rem;
+                            border-radius: .5rem;
+                        }
+                    }
+
+                    #github {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .titles {
+        text-align: center;
+        margin: 1rem 0 2rem 0;
+
+        #title {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+
+    .aboutContainer {
+        width: 80vw;
+        margin-left: 10vw;
+
+        .aboutRow {
+            margin-bottom: 5rem;
+
+            #title {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            #desc {
+                font-size: 2rem;
+            }
+        }
+    }
+}
