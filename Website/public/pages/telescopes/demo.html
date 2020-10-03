@@ -11,10 +11,25 @@
     <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
     <script src="../../js/telescopes/demo.js"></script>
     <title>Document</title>
+
+
 </head>
 
 <body>
     <div id="viewer"></div>
+    <style>
+        #viewer {
+            width: 75vw;
+            height: 85vh;
+        }
+    </style>
+    <script>
+        var viewer = new PhotoSphereViewer.Viewer({
+            navbar: false,
+            container: document.querySelector('#viewer'),
+            panorama: './panaroma.jpg'
+        });
+    </script>
 </body>
 
 </html>
