@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body {
     width: auto;
     height: 100vh;
@@ -64,6 +64,40 @@ body .navBar #logo #imgTop {
   z-index: 99;
 }
 
+@media screen and (max-width: 415px) {
+  body .navBar #logo #imgTop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo #imgBot {
+    display: none;
+  }
+}
+
+body .navBar #logo #mImgTop {
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo #mImgTop {
+    display: unset;
+    margin-top: 4vw;
+  }
+}
+
+body .navBar #logo #mImgBot {
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo #mImgBot {
+    display: unset;
+    margin-top: 4vw;
+  }
+}
+
 body .navBar #logo img {
   margin: 1vw 0 0 0;
   height: 6rem;
@@ -78,9 +112,47 @@ body .navBar #logo:hover #imgTop {
   opacity: 1;
 }
 
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #imgTop {
+    display: none;
+  }
+}
+
 body .navBar #logo:hover #imgBot {
   visibility: hidden;
   opacity: 0;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #imgBot {
+    display: none;
+  }
+}
+
+body .navBar #logo:hover #mImgTop {
+  visibility: unset;
+  opacity: 1;
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #mImgTop {
+    display: unset;
+    margin-top: 4vw;
+  }
+}
+
+body .navBar #logo:hover #mImgBot {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #mImgBot {
+    display: unset;
+    margin-top: 4vw;
+  }
 }
 
 body .navBar .right {
@@ -93,12 +165,6 @@ body .navBar .right {
           align-items: center;
 }
 
-@media screen and (max-width: 375px) {
-  body .navBar .right {
-    display: none;
-  }
-}
-
 body .navBar .right #navList {
   list-style: none;
   display: -webkit-box;
@@ -108,6 +174,12 @@ body .navBar .right #navList {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar .right #navList {
+    display: none;
+  }
 }
 
 body .navBar .right #navList #navListItem {
@@ -150,10 +222,11 @@ body .titles #title {
   font-weight: 700;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .titles #title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 600;
+    text-align: center;
   }
 }
 
@@ -173,6 +246,17 @@ body .contactContainer .contactUs {
   margin-left: 27.5vw;
 }
 
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+}
+
 body .contactContainer .contactUs .formRow {
   margin-top: 2vw;
 }
@@ -184,6 +268,15 @@ body .contactContainer .contactUs .upper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .upper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body .contactContainer .contactUs .upper .formInput {
@@ -200,10 +293,23 @@ body .contactContainer .contactUs .upper .formInput label {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .upper .formInput label {
+    margin-top: 1vw;
+  }
+}
+
 body .contactContainer .contactUs .upper .formInput input {
   font-size: 1.5rem;
   width: 20vw;
   color: #000c2d;
+}
+
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .upper .formInput input {
+    width: 80vw;
+    font-size: 2.1rem;
+  }
 }
 
 body .contactContainer .contactUs .upper .formInput input:focus {
@@ -233,10 +339,23 @@ body .contactContainer .contactUs .middle .formInput label {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .middle .formInput label {
+    margin-top: 1vw;
+  }
+}
+
 body .contactContainer .contactUs .middle .formInput input {
   font-size: 1.5rem;
   width: 45vw;
   color: #000c2d;
+}
+
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .middle .formInput input {
+    width: 80vw;
+    font-size: 2.1rem;
+  }
 }
 
 body .contactContainer .contactUs .middle .formInput input:focus {
@@ -266,11 +385,25 @@ body .contactContainer .contactUs .lower .formInput label {
   font-size: 2rem;
 }
 
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .lower .formInput label {
+    margin-top: 1vw;
+  }
+}
+
 body .contactContainer .contactUs .lower .formInput textarea {
   font-size: 1.5rem;
   width: 45vw;
   height: 10vw;
   color: #000c2d;
+}
+
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs .lower .formInput textarea {
+    width: 80vw;
+    font-size: 2.1rem;
+    height: 50vw;
+  }
 }
 
 body .contactContainer .contactUs .lower .formInput textarea:focus {
@@ -291,6 +424,13 @@ body .contactContainer .contactUs #submit {
   transition: ease .3s;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media screen and (max-width: 415px) {
+  body .contactContainer .contactUs #submit {
+    width: 25vw;
+    height: 10vw;
+  }
 }
 
 body .contactContainer .contactUs #submit:hover {
