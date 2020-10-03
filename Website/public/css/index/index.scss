@@ -70,12 +70,14 @@ body {
 					display: none;
 					@include mobileIphone {
 						display: unset;
+						margin-top: 4vw;
 					}
 			}
 			#mImgBot{
 					display: none;
 					@include mobileIphone {
 						display: unset;
+						margin-top: 4vw;
 					}
 			}
 
@@ -92,6 +94,7 @@ body {
 				opacity: 1;
 				@include mobileIphone {
 					display: none;
+					margin-top: 4vw;
 				}
 			}
 
@@ -100,6 +103,7 @@ body {
 				opacity: 0;
 				@include mobileIphone {
 					display: none;
+					margin-top: 4vw;
 				}
 			}
 
@@ -110,6 +114,7 @@ body {
 				display: none;
 				@include mobileIphone {
 					display: unset;
+					margin-top: 4vw;
 				}
 			}
 
@@ -119,6 +124,7 @@ body {
 				display: none;
 				@include mobileIphone {
 					display: unset;
+					margin-top: 4vw;
 				}
 			}
 		
@@ -218,7 +224,7 @@ body {
 			@include mobileIphone {
 				margin: 3vw 0vw 0vw 10vw ;
 				width: 80vw;
-				height: 100vw;
+				height: 150vw;
 			}
 			display: flex;
 			flex-direction: column;
@@ -244,7 +250,7 @@ body {
 				font-size: 2rem;
 				margin: 1.5rem 0;
 				@include mobileIphone {
-					font-size: 4rem;
+					font-size: 3rem;
 					margin: 1.5rem 0;
 				}
 			}

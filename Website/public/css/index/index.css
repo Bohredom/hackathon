@@ -84,6 +84,7 @@ body .navBar #logo #mImgTop {
 @media screen and (max-width: 415px) {
   body .navBar #logo #mImgTop {
     display: unset;
+    margin-top: 4vw;
   }
 }
 
@@ -94,6 +95,7 @@ body .navBar #logo #mImgBot {
 @media screen and (max-width: 415px) {
   body .navBar #logo #mImgBot {
     display: unset;
+    margin-top: 4vw;
   }
 }
 
@@ -114,6 +116,7 @@ body .navBar #logo:hover #imgTop {
 @media screen and (max-width: 415px) {
   body .navBar #logo:hover #imgTop {
     display: none;
+    margin-top: 4vw;
   }
 }
 
@@ -125,6 +128,7 @@ body .navBar #logo:hover #imgBot {
 @media screen and (max-width: 415px) {
   body .navBar #logo:hover #imgBot {
     display: none;
+    margin-top: 4vw;
   }
 }
 
@@ -137,6 +141,7 @@ body .navBar #logo:hover #mImgTop {
 @media screen and (max-width: 415px) {
   body .navBar #logo:hover #mImgTop {
     display: unset;
+    margin-top: 4vw;
   }
 }
 
@@ -149,6 +154,7 @@ body .navBar #logo:hover #mImgBot {
 @media screen and (max-width: 415px) {
   body .navBar #logo:hover #mImgBot {
     display: unset;
+    margin-top: 4vw;
   }
 }
 
@@ -286,7 +292,7 @@ body .cardxdContainer .cardxd {
   body .cardxdContainer .cardxd {
     margin: 3vw 0vw 0vw 10vw;
     width: 80vw;
-    height: 100vw;
+    height: 150vw;
   }
 }
 
@@ -317,7 +323,7 @@ body .cardxdContainer .cardxd #cardTitle {
 
 @media screen and (max-width: 415px) {
   body .cardxdContainer .cardxd #cardTitle {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1.5rem 0;
   }
 }
