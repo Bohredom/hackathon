@@ -19,7 +19,7 @@ body {
   padding-bottom: 7rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body {
     width: auto;
     height: 185vh;
@@ -65,13 +65,13 @@ body .navBar #logo #imgTop {
   z-index: 99;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo #imgTop {
     display: none;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo #imgBot {
     display: none;
   }
@@ -81,7 +81,7 @@ body .navBar #logo #mImgTop {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo #mImgTop {
     display: unset;
   }
@@ -91,7 +91,7 @@ body .navBar #logo #mImgBot {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo #mImgBot {
     display: unset;
   }
@@ -111,7 +111,7 @@ body .navBar #logo:hover #imgTop {
   opacity: 1;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo:hover #imgTop {
     display: none;
   }
@@ -122,7 +122,7 @@ body .navBar #logo:hover #imgBot {
   opacity: 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo:hover #imgBot {
     display: none;
   }
@@ -134,7 +134,7 @@ body .navBar #logo:hover #mImgTop {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo:hover #mImgTop {
     display: unset;
   }
@@ -146,7 +146,7 @@ body .navBar #logo:hover #mImgBot {
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar #logo:hover #mImgBot {
     display: unset;
   }
@@ -162,7 +162,7 @@ body .navBar .right {
           align-items: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .navBar .right {
     display: none;
   }
@@ -219,7 +219,7 @@ body .titles #title {
   font-weight: 700;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .titles #title {
     font-size: 2.5rem;
     font-weight: 600;
@@ -233,7 +233,7 @@ body .titles #subTitle {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .titles #subTitle {
     font-size: 1.5rem;
     font-weight: 500;
@@ -255,7 +255,7 @@ body .cardxdContainer {
           justify-content: space-evenly;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .cardxdContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -282,7 +282,7 @@ body .cardxdContainer .cardxd {
           flex-direction: column;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .cardxdContainer .cardxd {
     margin: 3vw 0vw 0vw 10vw;
     width: 80vw;
@@ -301,7 +301,7 @@ body .cardxdContainer .cardxd img {
   margin: 1vw 0 0 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .cardxdContainer .cardxd img {
     width: 50vw;
     height: 28.125vw;
@@ -315,7 +315,7 @@ body .cardxdContainer .cardxd #cardTitle {
   margin: 1.5rem 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .cardxdContainer .cardxd #cardTitle {
     font-size: 4rem;
     margin: 1.5rem 0;
@@ -328,7 +328,7 @@ body .cardxdContainer .cardxd #desc {
   margin: 1.5rem 2rem 2rem 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
   body .cardxdContainer .cardxd #desc {
     font-size: 4vw;
     margin: 1.5rem 0;
