@@ -47,8 +47,8 @@ body {
 			}
 
 			img {
-				margin: 1.3vw 0 0 0;
-				height: 5rem;
+				margin: 1vw 0 0 0;
+				height: 6rem;
 				width: auto;
 				position: absolute;
 				transition: visibility .2s, opacity 0.2s linear;
@@ -78,7 +78,7 @@ body {
 
 				#navListItem {
 					display: flex;
-					margin-right: 2rem;
+					margin-right: 2.5rem;
 					align-items: center;
 
 					a {
@@ -91,7 +91,7 @@ body {
 							background-color: $color;
 							color: #000c2d;
 							font-size: 2rem;
-							padding: .5rem 2rem .7rem;
+							padding: .5rem 2.5rem .7rem;
 							border-radius: .5rem;
 						}
 					}
@@ -139,6 +139,10 @@ body {
 			padding: 1.5rem 1rem 3rem 1rem;
 			margin: 0;
 			text-align: center;
+
+			a {
+				text-decoration: none;
+			}
 
 			img {
 				width: 21vw;
