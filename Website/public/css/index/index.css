@@ -133,11 +133,25 @@ body .titles #title {
   font-weight: 700;
 }
 
+@media screen and (max-width: 375px) {
+  body .titles #title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
 body .titles #subTitle {
   width: 80vw;
   margin-left: 10vw;
   margin-top: 1.5rem;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  body .titles #subTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }
 
 body .titles #subTitle span {
@@ -155,6 +169,16 @@ body .cardxdContainer {
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 375px) {
+  body .cardxdContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5rem 0 0 0;
+  }
+}
+
 body .cardxdContainer .cardxd {
   width: 25vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#08244D), to(#385C92));
@@ -163,6 +187,14 @@ body .cardxdContainer .cardxd {
   padding: 1.5rem 1rem 3rem 1rem;
   margin: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  body .cardxdContainer .cardxd {
+    margin: 3vw 0vw 0vw 10vw;
+    width: 80vw;
+    height: 100vw;
+  }
 }
 
 body .cardxdContainer .cardxd a {
@@ -176,15 +208,38 @@ body .cardxdContainer .cardxd img {
   margin: 1vw 0 0 0;
 }
 
+@media screen and (max-width: 375px) {
+  body .cardxdContainer .cardxd img {
+    width: 50vw;
+    height: 28.125vw;
+    border-radius: 1rem;
+    margin: 1vw 0 0 0;
+  }
+}
+
 body .cardxdContainer .cardxd #cardTitle {
   font-size: 2.6rem;
   margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 375px) {
+  body .cardxdContainer .cardxd #cardTitle {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+  }
 }
 
 body .cardxdContainer .cardxd #desc {
   font-size: 1.2vw;
   text-align: justify;
   margin: 1.5rem 2rem 2rem 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  body .cardxdContainer .cardxd #desc {
+    font-size: 4vw;
+    margin: 1.5rem 0;
+  }
 }
 
 body .cardxdContainer .cardxd #learnMore {

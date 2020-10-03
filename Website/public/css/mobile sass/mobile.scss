@@ -1,0 +1,35 @@
+$mobileLWidth: 840px;
+$mobileMWidth: 550px;
+$mobileSWidth: 560px;
+$mobileIphoneWidth: 375px;
+$mobileAndroidWidth: 360px;
+
+@mixin mobileL {
+	@media screen and (max-width: #{$mobileLWidth}) {
+		@content;
+	}
+}
+
+@mixin mobileM {
+	@media screen and (max-width: #{$mobileMWidth}) {
+		@content;
+	}
+}
+
+@mixin mobileS {
+	@media (max-width: #{$mobileSWidth}) {
+		@content;
+	}
+}
+
+@mixin mobileIphone {
+	@media screen and (max-width: #{$mobileIphoneWidth}) {
+		@content;
+	}
+}
+
+@mixin mobileAndroid {
+	@media screen and (max-width: #{$mobileAndroidWidth}) {
+		@content;
+	}
+}
