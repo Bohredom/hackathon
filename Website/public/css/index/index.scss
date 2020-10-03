@@ -37,10 +37,31 @@ body {
 			padding: 0;
 			color: $color;
 			text-decoration: none;
+			height: 12vh;
+			align-items: center;
+
+			#imgTop {
+				visibility: hidden;
+				opacity: 0;
+				z-index: 99;
+			}
 
 			img {
+				margin: 1.3vw 0 0 0;
 				height: 5rem;
 				width: auto;
+				position: absolute;
+				transition: visibility .2s, opacity 0.2s linear;
+			}
+
+			&:hover #imgTop {
+				visibility: unset;
+				opacity: 1;
+			}
+
+			&:hover #imgBot {
+				visibility: hidden;
+				opacity: 0;
 			}
 		}
 

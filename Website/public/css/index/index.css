@@ -41,11 +41,35 @@ body .navBar #logo {
   padding: 0;
   color: #ffffff;
   text-decoration: none;
+  height: 12vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .navBar #logo #imgTop {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
 }
 
 body .navBar #logo img {
+  margin: 1.3vw 0 0 0;
   height: 5rem;
   width: auto;
+  position: absolute;
+  -webkit-transition: visibility .2s, opacity 0.2s linear;
+  transition: visibility .2s, opacity 0.2s linear;
+}
+
+body .navBar #logo:hover #imgTop {
+  visibility: unset;
+  opacity: 1;
+}
+
+body .navBar #logo:hover #imgBot {
+  visibility: hidden;
+  opacity: 0;
 }
 
 body .navBar .right {

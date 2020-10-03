@@ -38,6 +38,7 @@ body {
             color: $color;
             text-decoration: none;
             height: 12vh;
+            align-items: center;
 
             #imgTop {
                 visibility: hidden;
@@ -46,12 +47,11 @@ body {
             }
 
             img {
-
+                margin: 1.3vw 0 0 0;
                 height: 5rem;
                 width: auto;
                 position: absolute;
                 transition: visibility .2s, opacity 0.2s linear;
-
             }
 
             &:hover #imgTop {
