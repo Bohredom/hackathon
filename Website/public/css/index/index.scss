@@ -21,6 +21,14 @@ body {
 	background: $bgColor;
 	background-size: cover;
 	background-repeat: no-repeat;
+	@include mobileIphone {
+		width: auto;
+		height:185vh;
+		overflow-x: hidden;
+		overflow-y:auto;
+		padding-right: 10vw;
+		margin: 0vw;
+	}
 
 
 	.navBar {
@@ -48,6 +56,26 @@ body {
 				visibility: hidden;
 				opacity: 0;
 				z-index: 99;
+				@include mobileIphone {
+					display: none;
+				}
+			}
+			#imgBot{
+				@include mobileIphone {
+					display: none;
+				}
+			}
+			#mImgTop{
+					display: none;
+					@include mobileIphone {
+						display: unset;
+					}
+			}
+			#mImgBot{
+					display: none;
+					@include mobileIphone {
+						display: unset;
+					}
 			}
 
 			img {
@@ -61,18 +89,48 @@ body {
 			&:hover #imgTop {
 				visibility: unset;
 				opacity: 1;
+				@include mobileIphone {
+					display: none;
+				}
 			}
 
 			&:hover #imgBot {
 				visibility: hidden;
 				opacity: 0;
+				@include mobileIphone {
+					display: none;
+				}
 			}
+
+
+			&:hover #mImgTop {
+				visibility: unset;
+				opacity: 1;
+				display: none;
+				@include mobileIphone {
+					display: unset;
+				}
+			}
+
+			&:hover #mImgBot {
+				visibility: hidden;
+				opacity: 0;
+				display: none;
+				@include mobileIphone {
+					display: unset;
+				}
+			}
+		
 		}
 
 		.right {
 			display: flex;
 			text-align: center;
 			align-items: center;
+			@include mobileIphone {
+				display: none;
+			}
+			
 
 			#navList {
 				list-style: none;

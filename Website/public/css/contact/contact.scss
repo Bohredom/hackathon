@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import "../mobile sass/mobile.scss";
 $font: Montserrat;
 $bgColor: linear-gradient(#000c2d, #00195e);
 $color: #ffffff;
@@ -20,6 +20,14 @@ body {
     background: $bgColor;
     background-size: cover;
     background-repeat: no-repeat;
+    @include mobileIphone {
+		width: auto;
+		height:100vh;
+		overflow-x: hidden;
+		overflow-y:auto;
+		padding-right: 10vw;
+		margin: 0vw;
+	}
 
     .navBar {
         height: 12vh;
@@ -69,6 +77,9 @@ body {
             display: flex;
             text-align: center;
             align-items: center;
+            @include mobileIphone {
+				display: none;
+			}
 
             #navList {
                 list-style: none;
@@ -109,9 +120,15 @@ body {
         text-align: center;
         margin: .5rem 0 0 0;
 
+        
+
         #title {
             font-size: 3rem;
             font-weight: 700;
+            @include mobileIphone {
+                font-size: 2.5rem;
+                font-weight: 600;
+            }
         }
     }
 

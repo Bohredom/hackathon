@@ -18,6 +18,17 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    width: auto;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 10vw;
+    margin: 0vw;
+  }
+}
+
 body .navBar {
   height: 12vh;
   width: 100vw;
@@ -82,6 +93,12 @@ body .navBar .right {
           align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  body .navBar .right {
+    display: none;
+  }
+}
+
 body .navBar .right #navList {
   list-style: none;
   display: -webkit-box;
@@ -131,6 +148,13 @@ body .titles {
 body .titles #title {
   font-size: 3rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  body .titles #title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
 }
 
 body .contactContainer {

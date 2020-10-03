@@ -18,6 +18,17 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 375px) {
+  body {
+    width: auto;
+    height: 185vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 10vw;
+    margin: 0vw;
+  }
+}
+
 body .navBar {
   height: 12vh;
   width: 100vw;
@@ -53,6 +64,38 @@ body .navBar #logo #imgTop {
   z-index: 99;
 }
 
+@media screen and (max-width: 375px) {
+  body .navBar #logo #imgTop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar #logo #imgBot {
+    display: none;
+  }
+}
+
+body .navBar #logo #mImgTop {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar #logo #mImgTop {
+    display: unset;
+  }
+}
+
+body .navBar #logo #mImgBot {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar #logo #mImgBot {
+    display: unset;
+  }
+}
+
 body .navBar #logo img {
   margin: 1vw 0 0 0;
   height: 6rem;
@@ -67,9 +110,45 @@ body .navBar #logo:hover #imgTop {
   opacity: 1;
 }
 
+@media screen and (max-width: 375px) {
+  body .navBar #logo:hover #imgTop {
+    display: none;
+  }
+}
+
 body .navBar #logo:hover #imgBot {
   visibility: hidden;
   opacity: 0;
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar #logo:hover #imgBot {
+    display: none;
+  }
+}
+
+body .navBar #logo:hover #mImgTop {
+  visibility: unset;
+  opacity: 1;
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar #logo:hover #mImgTop {
+    display: unset;
+  }
+}
+
+body .navBar #logo:hover #mImgBot {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar #logo:hover #mImgBot {
+    display: unset;
+  }
 }
 
 body .navBar .right {
@@ -80,6 +159,12 @@ body .navBar .right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  body .navBar .right {
+    display: none;
+  }
 }
 
 body .navBar .right #navList {
