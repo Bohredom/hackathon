@@ -215,6 +215,7 @@ body .navBar .right #navList #navListItem #github {
 body .titles {
   text-align: center;
   margin: .5rem 0 0 0;
+  width: 100vw;
 }
 
 body .titles #title {
@@ -295,7 +296,7 @@ body .contactContainer .contactUs .upper .formInput label {
 
 @media screen and (max-width: 415px) {
   body .contactContainer .contactUs .upper .formInput label {
-    margin-top: 1vw;
+    margin-top: 2vw;
   }
 }
 
@@ -430,6 +431,7 @@ body .contactContainer .contactUs #submit {
   body .contactContainer .contactUs #submit {
     width: 25vw;
     height: 10vw;
+    margin-top: 4vw;
   }
 }
 

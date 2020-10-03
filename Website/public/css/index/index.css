@@ -218,6 +218,7 @@ body .navBar .right #navList #navListItem #github {
 body .titles {
   text-align: center;
   margin: .5rem 0 0 0;
+  width: 100vw;
 }
 
 body .titles #title {

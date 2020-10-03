@@ -20,14 +20,15 @@ body {
     background: $bgColor;
     background-size: cover;
     background-repeat: no-repeat;
+
     @include mobileIphone {
-		width: auto;
-		height:100vh;
-		overflow-x: hidden;
-		overflow-y:auto;
-		padding-right: 10vw;
-		margin: 0vw;
-	}
+        width: auto;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-right: 10vw;
+        margin: 0vw;
+    }
 
     .navBar {
         height: 12vh;
@@ -52,29 +53,36 @@ body {
                 visibility: hidden;
                 opacity: 0;
                 z-index: 99;
-				@include mobileIphone {
-					display: none;
-				}
-			}
-			#imgBot{
-				@include mobileIphone {
-					display: none;
-				}
-            } 
-            #mImgTop{
+
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            #imgBot {
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            #mImgTop {
                 display: none;
+
                 @include mobileIphone {
                     display: unset;
                     margin-top: 4vw;
                 }
-        }
-        #mImgBot{
+            }
+
+            #mImgBot {
                 display: none;
+
                 @include mobileIphone {
                     display: unset;
                     margin-top: 4vw;
                 }
-        }
+            }
+
             img {
                 margin: 1vw 0 0 0;
                 height: 6rem;
@@ -86,36 +94,41 @@ body {
             &:hover #imgTop {
                 visibility: unset;
                 opacity: 1;
+
                 @include mobileIphone {
-					display: none;
-				}
+                    display: none;
+                }
             }
 
             &:hover #imgBot {
                 visibility: hidden;
                 opacity: 0;
+
                 @include mobileIphone {
-					display: none;
-				}
+                    display: none;
+                }
             }
+
             &:hover #mImgTop {
                 visibility: unset;
                 opacity: 1;
                 display: none;
+
                 @include mobileIphone {
                     display: unset;
                     margin-top: 4vw;
-				}
+                }
             }
 
             &:hover #mImgBot {
                 visibility: hidden;
                 opacity: 0;
                 display: none;
+
                 @include mobileIphone {
                     display: unset;
                     margin-top: 4vw;
-				}
+                }
             }
         }
 
@@ -130,6 +143,7 @@ body {
                 display: flex;
                 align-items: center;
                 margin-right: 1rem;
+
                 @include mobileIphone {
                     display: none;
                 }
@@ -166,13 +180,12 @@ body {
     .titles {
         text-align: center;
         margin: .5rem 0 0 0;
-
-
-        
+        width: 100vw;
 
         #title {
             font-size: 3rem;
             font-weight: 700;
+
             @include mobileIphone {
                 font-size: 3.5rem;
                 font-weight: 600;
@@ -189,6 +202,7 @@ body {
             flex-direction: column;
             width: 45vw;
             margin-left: 27.5vw;
+
             @include mobileIphone {
                 flex-direction: column;
                 width: 80vw;
@@ -202,6 +216,7 @@ body {
             .upper {
                 display: flex;
                 justify-content: space-between;
+
                 @include mobileIphone {
                     flex-direction: column;
                 }
@@ -210,12 +225,11 @@ body {
                     display: flex;
                     flex-direction: column;
 
-
-
                     label {
                         font-size: 2rem;
+
                         @include mobileIphone {
-                            margin-top: 1vw;
+                            margin-top: 2vw;
                         }
                     }
 
@@ -223,6 +237,7 @@ body {
                         font-size: 1.5rem;
                         width: 20vw;
                         color: #000c2d;
+
                         @include mobileIphone {
                             width: 80vw;
                             font-size: 2.1rem;
@@ -246,6 +261,7 @@ body {
 
                     label {
                         font-size: 2rem;
+
                         @include mobileIphone {
                             margin-top: 1vw;
                         }
@@ -255,6 +271,7 @@ body {
                         font-size: 1.5rem;
                         width: 45vw;
                         color: #000c2d;
+
                         @include mobileIphone {
                             width: 80vw;
                             font-size: 2.1rem;
@@ -278,6 +295,7 @@ body {
 
                     label {
                         font-size: 2rem;
+
                         @include mobileIphone {
                             margin-top: 1vw;
                         }
@@ -288,6 +306,7 @@ body {
                         width: 45vw;
                         height: 10vw;
                         color: #000c2d;
+
                         @include mobileIphone {
                             width: 80vw;
                             font-size: 2.1rem;
@@ -313,9 +332,11 @@ body {
                 border-radius: .4vw;
                 transition: ease .3s;
                 align-self: flex-end;
+
                 @include mobileIphone {
                     width: 25vw;
                     height: 10vw;
+                    margin-top: 4vw;
                 }
 
                 &:hover {

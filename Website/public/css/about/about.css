@@ -125,6 +125,7 @@ body .navBar .right #navList #navListItem #github {
 body .titles {
   text-align: center;
   margin: 1rem 0 2rem 0;
+  width: 100vw;
 }
 
 body .titles #title {
