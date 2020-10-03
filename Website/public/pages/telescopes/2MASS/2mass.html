@@ -12,21 +12,40 @@
     <script src="../../js/telescopes/demo.js"></script>
     <title>Bohredom 2MASS</title>
     <link rel="stylesheet" href="./css/2mass.css">
+    <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div id="viewer"></div>
-    <style>
-        #viewer {
-            width: 75vw;
-            height: 85vh;
-        }
-    </style>
+    <nav role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="../../../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../../about.html">
+                    <li>About</li>
+                </a>
+                <a href="../../contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="../../howToUse.html">
+                    <li id="howToUse">How to Use</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div id="observer"></div>
     <script>
         var viewer = new PhotoSphereViewer.Viewer({
             navbar: false,
-            container: document.querySelector('#viewer'),
-            panorama: './Fermi-color.jpg'
+            container: document.querySelector('#observer'),
+            panorama: './2MASS-color.jpg'
         });
     </script>
 </body>
