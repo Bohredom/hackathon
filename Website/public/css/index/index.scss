@@ -21,7 +21,6 @@ body {
 	background: $bgColor;
 	background-size: cover;
 	background-repeat: no-repeat;
-<<<<<<< HEAD
 	@include mobileIphone {
 		width: auto;
 		height:185vh;
@@ -31,9 +30,7 @@ body {
 		margin: 0vw;
 	}
 
-=======
 	padding-bottom: 7rem;
->>>>>>> 6f36ad66b196fed065a07c7ab86b662bab323784
 
 	.navBar {
 		height: 12vh;
@@ -218,16 +215,13 @@ body {
 			padding: 1.5rem 1rem 3rem 1rem;
 			margin: 0;
 			text-align: center;
-<<<<<<< HEAD
 			@include mobileIphone {
 				margin: 3vw 0vw 0vw 10vw ;
 				width: 80vw;
 				height: 100vw;
 			}
-=======
 			display: flex;
 			flex-direction: column;
->>>>>>> 6f36ad66b196fed065a07c7ab86b662bab323784
 
 			a {
 				text-decoration: none;
