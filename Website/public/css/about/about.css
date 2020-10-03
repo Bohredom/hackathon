@@ -52,13 +52,47 @@ body .navBar #logo #imgTop {
   z-index: 99;
 }
 
+@media screen and (max-width: 415px) {
+  body .navBar #logo #imgTop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo #imgBot {
+    display: none;
+  }
+}
+
+body .navBar #logo #mImgTop {
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo #mImgTop {
+    display: unset;
+    margin-top: 4vw;
+  }
+}
+
+body .navBar #logo #mImgBot {
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo #mImgBot {
+    display: unset;
+    margin-top: 4vw;
+  }
+}
+
 body .navBar #logo img {
   margin: 1vw 0 0 0;
   height: 6rem;
   width: auto;
   position: absolute;
-  -webkit-transition: visibility .2s, opacity 0.2s linear;
-  transition: visibility .2s, opacity 0.2s linear;
+  -webkit-transition: visibility 0.2s, opacity 0.2s linear;
+  transition: visibility 0.2s, opacity 0.2s linear;
 }
 
 body .navBar #logo:hover #imgTop {
@@ -66,9 +100,47 @@ body .navBar #logo:hover #imgTop {
   opacity: 1;
 }
 
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #imgTop {
+    display: none;
+  }
+}
+
 body .navBar #logo:hover #imgBot {
   visibility: hidden;
   opacity: 0;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #imgBot {
+    display: none;
+  }
+}
+
+body .navBar #logo:hover #mImgTop {
+  visibility: unset;
+  opacity: 1;
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #mImgTop {
+    display: unset;
+    margin-top: 4vw;
+  }
+}
+
+body .navBar #logo:hover #mImgBot {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar #logo:hover #mImgBot {
+    display: unset;
+    margin-top: 4vw;
+  }
 }
 
 body .navBar .right {
@@ -92,6 +164,12 @@ body .navBar .right #navList {
   margin-right: 1rem;
 }
 
+@media screen and (max-width: 415px) {
+  body .navBar .right #navList {
+    display: none;
+  }
+}
+
 body .navBar .right #navList #navListItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,8 +191,8 @@ body .navBar .right #navList #navListItem a span {
   background-color: #ffffff;
   color: #000c2d;
   font-size: 2rem;
-  padding: .5rem 2.5rem .7rem;
-  border-radius: .5rem;
+  padding: 0.5rem 2.5rem 0.7rem;
+  border-radius: 0.5rem;
 }
 
 body .navBar .right #navList #navListItem #github {
@@ -133,6 +211,13 @@ body .titles #title {
   font-weight: 700;
 }
 
+@media screen and (max-width: 415px) {
+  body .titles #title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+}
+
 body .aboutContainer {
   width: 80vw;
   margin-left: 10vw;
@@ -145,11 +230,25 @@ body .aboutContainer .aboutRow {
 body .aboutContainer .aboutRow #title {
   font-size: 3.5rem;
   font-weight: 700;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 415px) {
+  body .aboutContainer .aboutRow #title {
+    margin-top: 2vw;
+    font-size: 3rem;
+    font-weight: 600;
+  }
 }
 
 body .aboutContainer .aboutRow #desc {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 415px) {
+  body .aboutContainer .aboutRow #desc {
+    font-weight: 500;
+  }
 }
 
 body .aboutContainer .aboutRow #desc span {
