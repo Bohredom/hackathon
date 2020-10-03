@@ -5,206 +5,215 @@ $bgColor: linear-gradient(#000c2d, #00195e);
 $color: #ffffff;
 
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  color: $color;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: $color;
+    text-decoration: none;
 }
 
 body {
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100%;
-  background: $bgColor;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .navBar {
-    height: 12vh;
+    overflow-x: hidden;
     width: 100vw;
-    background-color: none; //TODO Bg blur koyualacak
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
+    background: $bgColor;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    #logo {
-      font-size: 3rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-      margin: 0 0 0 3rem;
-      padding: 0;
-      color: $color;
-      text-decoration: none;
-      height: 12vh;
-      align-items: center;
-
-      #imgTop {
-        visibility: hidden;
-        opacity: 0;
-        z-index: 99;
-        @include mobileIphone {
-          display: none;
-        }
-      }
-      #imgBot {
-        @include mobileIphone {
-          display: none;
-        }
-      }
-
-      #mImgTop {
-        display: none;
-
-        @include mobileIphone {
-          display: unset;
-          margin-top: 4vw;
-        }
-      }
-
-      #mImgBot {
-        display: none;
-
-        @include mobileIphone {
-          display: unset;
-          margin-top: 4vw;
-        }
-      }
-
-      img {
-        margin: 1vw 0 0 0;
-        height: 6rem;
-        width: auto;
-        position: absolute;
-        transition: visibility 0.2s, opacity 0.2s linear;
-      }
-
-      &:hover #imgTop {
-        visibility: unset;
-        opacity: 1;
-        @include mobileIphone {
-          display: none;
-        }
-      }
-
-      &:hover #imgBot {
-        visibility: hidden;
-        opacity: 0;
-        @include mobileIphone {
-          display: none;
-        }
-      }
-      &:hover #mImgTop {
-        visibility: unset;
-        opacity: 1;
-        display: none;
-
-        @include mobileIphone {
-          display: unset;
-          margin-top: 4vw;
-        }
-      }
-
-      &:hover #mImgBot {
-        visibility: hidden;
-        opacity: 0;
-        display: none;
-
-        @include mobileIphone {
-          display: unset;
-          margin-top: 4vw;
-        }
-      }
-    }
-
-    .right {
-      display: flex;
-      text-align: center;
-      align-items: center;
-
-      #navList {
-        list-style: none;
+    .navBar {
+        height: 12vh;
+        width: 100vw;
+        background-color: none; //TODO Bg blur koyualacak
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        margin-right: 1rem;
-        @include mobileIphone {
-          display: none;
-        }
 
-        #navListItem {
-          display: flex;
-          margin-right: 2.5rem;
-          align-items: center;
-
-          a {
-            font-weight: 600;
-            font-size: 2rem;
+        #logo {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 0 0 3rem;
+            padding: 0;
             color: $color;
             text-decoration: none;
+            height: 12vh;
+            align-items: center;
 
-            span {
-              background-color: $color;
-              color: #000c2d;
-              font-size: 2rem;
-              padding: 0.5rem 2.5rem 0.7rem;
-              border-radius: 0.5rem;
+            #imgTop {
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+
+                @include mobileIphone {
+                    display: none;
+                }
             }
-          }
 
-          #github {
-            width: 3rem;
-            height: 3rem;
-          }
+            #imgBot {
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            #mImgTop {
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+
+            #mImgBot {
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+
+            img {
+                margin: 1vw 0 0 0;
+                height: 6rem;
+                width: auto;
+                position: absolute;
+                transition: visibility 0.2s, opacity 0.2s linear;
+            }
+
+            &:hover #imgTop {
+                visibility: unset;
+                opacity: 1;
+
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            &:hover #imgBot {
+                visibility: hidden;
+                opacity: 0;
+
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            &:hover #mImgTop {
+                visibility: unset;
+                opacity: 1;
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+
+            &:hover #mImgBot {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
         }
-      }
-    }
-  }
 
-  .titles {
-    text-align: center;
-    margin: 1rem 0 2rem 0;
-    width: 100vw;
+        .right {
+            display: flex;
+            text-align: center;
+            align-items: center;
 
-    #title {
-      font-size: 4rem;
-      font-weight: 700;
-      @include mobileIphone {
-        font-size: 3.5rem;
-        font-weight: 700;
-      }
-    }
-  }
+            #navList {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
 
-  .aboutContainer {
-    width: 80vw;
-    margin-left: 10vw;
+                @include mobileIphone {
+                    display: none;
+                }
 
-    .aboutRow {
-      margin-bottom: 7rem;
+                #navListItem {
+                    display: flex;
+                    margin-right: 2.5rem;
+                    align-items: center;
 
-      #title {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-        @include mobileIphone {
-          margin-top: 2vw;
-          font-size: 3rem;
-          font-weight: 600;
+                    a {
+                        font-weight: 600;
+                        font-size: 2rem;
+                        color: $color;
+                        text-decoration: none;
+
+                        span {
+                            background-color: $color;
+                            color: #000c2d;
+                            font-size: 2rem;
+                            padding: 0.5rem 2.5rem 0.7rem;
+                            border-radius: 0.5rem;
+                        }
+                    }
+
+                    #github {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+            }
         }
-      }
-
-      #desc {
-        font-size: 2rem;
-        @include mobileIphone {
-            font-weight: 500;
-          }
-        
-
-        span {
-          font-weight: 700;
-          font-size: 2rem;
-        }
-      }
     }
-  }
+
+    .titles {
+        text-align: center;
+        margin: 1rem 0 2rem 0;
+        width: 100vw;
+
+        #title {
+            font-size: 4rem;
+            font-weight: 700;
+
+            @include mobileIphone {
+                font-size: 3.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .aboutContainer {
+        width: 80vw;
+        margin-left: 10vw;
+
+        .aboutRow {
+            margin-bottom: 7rem;
+
+            #title {
+                font-size: 3.5rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+
+                @include mobileIphone {
+                    margin-top: 2vw;
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+            }
+
+            #desc {
+                font-size: 2rem;
+
+                @include mobileIphone {
+                    font-weight: 500;
+                }
+
+
+                span {
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }
