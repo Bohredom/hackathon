@@ -14,9 +14,8 @@ $color: #ffffff;
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: $bgColor;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,7 +109,7 @@ body {
         margin: 1rem 0 2rem 0;
 
         #title {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 700;
         }
     }
@@ -120,15 +119,21 @@ body {
         margin-left: 10vw;
 
         .aboutRow {
-            margin-bottom: 5rem;
+            margin-bottom: 7rem;
 
             #title {
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-weight: 700;
+                margin-bottom: .5rem;
             }
 
             #desc {
                 font-size: 2rem;
+
+                span {
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
             }
         }
     }

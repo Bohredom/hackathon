@@ -9,9 +9,8 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#000c2d), to(#00195e));
   background: linear-gradient(#000c2d, #00195e);
   background-size: cover;
@@ -129,7 +128,7 @@ body .titles {
 }
 
 body .titles #title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
@@ -139,15 +138,21 @@ body .aboutContainer {
 }
 
 body .aboutContainer .aboutRow {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 body .aboutContainer .aboutRow #title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  margin-bottom: .5rem;
 }
 
 body .aboutContainer .aboutRow #desc {
+  font-size: 2rem;
+}
+
+body .aboutContainer .aboutRow #desc span {
+  font-weight: 700;
   font-size: 2rem;
 }
 /*# sourceMappingURL=about.css.map */
