@@ -19,7 +19,7 @@ body {
 }
 
 body .navBar {
-  height: 10vh;
+  height: 12vh;
   width: 100vw;
   background-color: none;
   display: -webkit-box;
@@ -41,11 +41,31 @@ body .navBar #logo {
   padding: 0;
   color: #ffffff;
   text-decoration: none;
+  height: 12vh;
+}
+
+body .navBar #logo #imgTop {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
 }
 
 body .navBar #logo img {
-  height: 4rem;
+  height: 5rem;
   width: auto;
+  position: absolute;
+  -webkit-transition: visibility .2s, opacity 0.2s linear;
+  transition: visibility .2s, opacity 0.2s linear;
+}
+
+body .navBar #logo:hover #imgTop {
+  visibility: unset;
+  opacity: 1;
+}
+
+body .navBar #logo:hover #imgBot {
+  visibility: hidden;
+  opacity: 0;
 }
 
 body .navBar .right {
@@ -84,6 +104,14 @@ body .navBar .right #navList #navListItem a {
   font-size: 2rem;
   color: #ffffff;
   text-decoration: none;
+}
+
+body .navBar .right #navList #navListItem a span {
+  background-color: #ffffff;
+  color: #000c2d;
+  font-size: 2rem;
+  padding: .5rem 2rem .7rem;
+  border-radius: .5rem;
 }
 
 body .navBar .right #navList #navListItem #github {

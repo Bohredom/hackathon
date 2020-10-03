@@ -22,7 +22,7 @@ body {
     background-repeat: no-repeat;
 
     .navBar {
-        height: 10vh;
+        height: 12vh;
         width: 100vw;
         background-color: none; //TODO Bg blur koyualacak
         display: flex;
@@ -37,10 +37,31 @@ body {
             padding: 0;
             color: $color;
             text-decoration: none;
+            height: 12vh;
+
+            #imgTop {
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+            }
 
             img {
-                height: 4rem;
+
+                height: 5rem;
                 width: auto;
+                position: absolute;
+                transition: visibility .2s, opacity 0.2s linear;
+
+            }
+
+            &:hover #imgTop {
+                visibility: unset;
+                opacity: 1;
+            }
+
+            &:hover #imgBot {
+                visibility: hidden;
+                opacity: 0;
             }
         }
 
@@ -65,6 +86,14 @@ body {
                         font-size: 2rem;
                         color: $color;
                         text-decoration: none;
+
+                        span {
+                            background-color: $color;
+                            color: #000c2d;
+                            font-size: 2rem;
+                            padding: .5rem 2rem .7rem;
+                            border-radius: .5rem;
+                        }
                     }
 
                     #github {

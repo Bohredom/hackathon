@@ -22,7 +22,7 @@ body {
 	background-repeat: no-repeat;
 
 	.navBar {
-		height: 10vh;
+		height: 12vh;
 		width: 100vw;
 		background-color: none; //TODO Bg blur koyualacak
 		display: flex;
@@ -39,7 +39,7 @@ body {
 			text-decoration: none;
 
 			img {
-				height: 4rem;
+				height: 5rem;
 				width: auto;
 			}
 		}
@@ -65,6 +65,14 @@ body {
 						font-size: 2rem;
 						color: $color;
 						text-decoration: none;
+
+						span {
+							background-color: $color;
+							color: #000c2d;
+							font-size: 2rem;
+							padding: .5rem 2rem .7rem;
+							border-radius: .5rem;
+						}
 					}
 
 					#github {
