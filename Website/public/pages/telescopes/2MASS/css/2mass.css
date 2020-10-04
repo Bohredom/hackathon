@@ -173,6 +173,8 @@ body .maskBox {
           transform: translateX(100%);
   -webkit-transition: ease .3s;
   transition: ease .3s;
+  position: absolute;
+  z-index: 80;
 }
 
 @media screen and (max-width: 415px) {
@@ -309,7 +311,7 @@ body .maskBox .dikeyKutu #gBox {
   padding-bottom: 1.2vh;
   border-radius: 5px;
   color: #002792;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -413,7 +415,7 @@ body .maskBox .yatayKutu .export {
   padding-bottom: 2vh;
   border-radius: 10px;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -432,7 +434,7 @@ body .maskBox .yatayKutu .moreInfo {
   padding-bottom: 2vh;
   border-radius: 10px;
   color: #002792;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
   border: none;

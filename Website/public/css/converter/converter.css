@@ -23,7 +23,7 @@ html {
 body {
   overflow-x: hidden;
   /* 	overflow-y: hidden; */
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#000c2d), to(#00195e));
   background: linear-gradient(#000c2d, #00195e);
@@ -320,7 +320,7 @@ body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(2) {
 
 body .navBar .navigation #menuToggle #menu {
   position: absolute;
-  width: 300px;
+  width: 330px;
   height: 110vh;
   margin: -100px 0 0 -100px;
   padding: 50px 50px 50px 12px;
