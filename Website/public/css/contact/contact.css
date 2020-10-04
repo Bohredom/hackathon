@@ -7,6 +7,19 @@
   text-decoration: none;
 }
 
+html {
+  height: auto;
+  /* background: linear-gradient(#000c2d, #00195e); */
+  background: #000c2d;
+}
+
+@media screen and (max-width: 415px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
 body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -26,6 +39,7 @@ body {
     overflow-y: auto;
     padding-right: 10vw;
     margin: 0vw;
+    position: fixed;
   }
 }
 
@@ -210,6 +224,131 @@ body .navBar .right #navList #navListItem a span {
 body .navBar .right #navList #navListItem #github {
   width: 3rem;
   height: 3rem;
+}
+
+body .navBar .navigation {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (max-width: 415px) {
+  body .navBar .navigation {
+    display: unset;
+  }
+}
+
+body .navBar .navigation #menuToggle {
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: 300px;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body .navBar .navigation #menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+body .navBar .navigation #menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -28px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  margin: 0;
+}
+
+body .navBar .navigation #menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+body .navBar .navigation #menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+body .navBar .navigation #menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+body .navBar .navigation #menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(0px, -1px);
+          transform: rotate(-45deg) translate(0px, -1px);
+}
+
+body .navBar .navigation #menuToggle #menu {
+  position: absolute;
+  width: 300px;
+  height: 110vh;
+  margin: -100px 0 0 -100px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #232323;
+  list-style-type: none;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+body .navBar .navigation #menuToggle #menu li {
+  padding: 10px 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+body .navBar .navigation #menuToggle #menu #howToUse {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #000c2d;
+  background-color: #ffffff;
+  border-radius: .3rem;
+}
+
+body .navBar .navigation #menuToggle input:checked ~ #menu {
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
 }
 
 body .titles {
