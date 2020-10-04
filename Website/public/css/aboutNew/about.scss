@@ -192,8 +192,8 @@ body {
             #menuToggle {
                 display: block;
                 position: absolute;
-                top: -15px;
-                left: 300px;
+                top: 0px;
+                left: 325px;
                 z-index: 1;
                 user-select: none;
 
@@ -259,7 +259,7 @@ body {
                     width: 350px;
                     height: 110vh;
                     margin: -100px 0 0 -100px;
-                    padding: 50px;
+                    padding: 50px 50px 50px 12px;
                     padding-top: 125px;
                     background: #232323;
                     list-style-type: none;
@@ -292,7 +292,7 @@ body {
 
     .titles {
         text-align: center;
-        margin: 1rem 0 2rem 0;
+        margin: 3rem 0 2rem 0;
         width: 100vw;
 
         #title {

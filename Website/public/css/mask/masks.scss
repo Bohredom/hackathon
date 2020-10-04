@@ -23,6 +23,10 @@ body {
 		border-radius: 5px;
 		z-index: 99;
 
+		@include mobileIphone {
+			margin-top: 2vw;
+		}
+
 		&:hover {
 			color: #fff;
 			background-color: #002792;
@@ -43,7 +47,14 @@ body {
 		transform: translateX(100%);
 		transition: ease .3s;
 
+		@include mobileIphone {
+			width: 80vw;
+			margin-left: 20vw;
+
+		}
+
 		//////////////////////////////////////
+
 		.dropbtn {
 			background-color: #0032bd;
 			color: white;
@@ -55,6 +66,10 @@ body {
 			font-weight: 600;
 			transition: ease .3s;
 			border-radius: 5px;
+
+			@include mobileIphone {
+				margin-left: 2.5rem;
+			}
 		}
 
 		.dropbtn:hover {
