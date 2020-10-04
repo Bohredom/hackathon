@@ -94,8 +94,8 @@ body .maskBox .dikeyKutu a {
   width: 40%;
   font-family: Montserrat;
   margin-left: 30%;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
   border-radius: 5px;
   color: #002792;
   font-size: 1rem;
@@ -104,6 +104,7 @@ body .maskBox .dikeyKutu a {
 }
 
 body .maskBox .yatayKutu {
+  margin-top: 2vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,5 +112,37 @@ body .maskBox .yatayKutu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+body .maskBox .yatayKutu .export {
+  text-align: center;
+  background-color: #002792;
+  width: 40%;
+  font-family: Montserrat;
+  margin-left: 2%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+}
+
+body .maskBox .yatayKutu .moreInfo {
+  text-align: center;
+  background-color: #FFFFFF;
+  width: 40%;
+  font-family: Montserrat;
+  margin-left: 10%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-radius: 10px;
+  color: #002792;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
 }
 /*# sourceMappingURL=masks.css.map */

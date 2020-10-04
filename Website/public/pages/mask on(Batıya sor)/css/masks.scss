@@ -86,8 +86,8 @@ body {
         width: 40%;
         font-family: $font;
         margin-left: 30%;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        padding-top: 1.2vh;
+        padding-bottom: 1.2vh;
         border-radius: 5px;
         color: #002792;
         font-size: 1rem;
@@ -95,12 +95,40 @@ body {
         text-decoration: none;
       }
     }
-
-    .yatayKutu {
-      display: flex;
-      flex-direction: row;
-
-      .export {}
+    .yatayKutu{
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        .export{
+            text-align: center;
+            background-color:#002792 ;
+            width: 40%;
+            font-family: $font;
+            margin-left: 2%;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+        }
+        .moreInfo{
+            text-align: center;
+            background-color:#FFFFFF ;
+            width: 40%;
+            font-family: $font;
+            margin-left: 10%;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            border-radius: 10px;
+            color:#002792 ;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: none;
+        }
     }
   }
 }
