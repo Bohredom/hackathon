@@ -36,8 +36,9 @@ function firebasePush(name, email, subject, message) {
 if (form) {
     form.addEventListener('submit', function (evt) {
         evt.preventDefault();
+        firebase.auth().signInAnonymously();
         firebasePush(inputName, inputEmail, inputSubj, inputMessage);
-
+        firebase.auth().signOut();
         return alert('Your message successfully sent to Bohredom developers');
     })
 }
