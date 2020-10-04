@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import "../mobile sass/mobile.scss";
+@import "../../../../css/mobile\ sass/mobile.scss";
 $font: Montserrat;
 $bgColor: linear-gradient(#000c2d, #00195e);
 $color: #ffffff;
@@ -33,7 +33,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding-bottom: 5vh;
+    padding-bottom: 24.4vh;
 
 
     .navBar {
