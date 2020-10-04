@@ -7,12 +7,6 @@
   text-decoration: none;
 }
 
-html {
-  height: auto;
-  /* background: linear-gradient(#000c2d, #00195e); */
-  background: #000c2d;
-}
-
 @media screen and (max-width: 415px) {
   html,
   body {
@@ -20,16 +14,33 @@ html {
   }
 }
 
+html {
+  height: auto;
+  /* background: linear-gradient(#000c2d, #00195e); */
+  background: #000c2d;
+}
+
 body {
   overflow-x: hidden;
-  width: 100vw;
-  height: 100%;
+  /* 	overflow-y: hidden; */
+  width: 100%;
+  height: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#000c2d), to(#00195e));
   background: linear-gradient(#000c2d, #00195e);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 9.5rem;
   position: relative;
-  padding-bottom: 5vh;
+}
+
+@media screen and (max-width: 415px) {
+  body {
+    width: auto;
+    height: 100%;
+    overflow-x: hidden;
+    padding-right: 10vw;
+    margin: 0vw;
+  }
 }
 
 body .navBar {
@@ -106,8 +117,8 @@ body .navBar #logo img {
   height: 6rem;
   width: auto;
   position: absolute;
-  -webkit-transition: visibility 0.2s, opacity 0.2s linear;
-  transition: visibility 0.2s, opacity 0.2s linear;
+  -webkit-transition: visibility .2s, opacity 0.2s linear;
+  transition: visibility .2s, opacity 0.2s linear;
 }
 
 body .navBar #logo:hover #imgTop {
@@ -118,6 +129,7 @@ body .navBar #logo:hover #imgTop {
 @media screen and (max-width: 415px) {
   body .navBar #logo:hover #imgTop {
     display: none;
+    margin-top: 4vw;
   }
 }
 
@@ -129,6 +141,7 @@ body .navBar #logo:hover #imgBot {
 @media screen and (max-width: 415px) {
   body .navBar #logo:hover #imgBot {
     display: none;
+    margin-top: 4vw;
   }
 }
 
@@ -168,6 +181,12 @@ body .navBar .right {
           align-items: center;
 }
 
+@media screen and (max-width: 415px) {
+  body .navBar .right {
+    display: none;
+  }
+}
+
 body .navBar .right #navList {
   list-style: none;
   display: -webkit-box;
@@ -177,12 +196,6 @@ body .navBar .right #navList {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 1rem;
-}
-
-@media screen and (max-width: 415px) {
-  body .navBar .right #navList {
-    display: none;
-  }
 }
 
 body .navBar .right #navList #navListItem {
@@ -206,8 +219,8 @@ body .navBar .right #navList #navListItem a span {
   background-color: #ffffff;
   color: #000c2d;
   font-size: 2rem;
-  padding: 0.5rem 2.5rem 0.7rem;
-  border-radius: 0.5rem;
+  padding: .5rem 2.5rem .7rem;
+  border-radius: .5rem;
 }
 
 body .navBar .right #navList #navListItem #github {
@@ -344,69 +357,57 @@ body .navBar .navigation #menuToggle input:checked ~ #menu {
 
 body .titles {
   text-align: center;
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 0 0;
   width: 100vw;
 }
 
 body .titles #title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 @media screen and (max-width: 415px) {
   body .titles #title {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 }
 
-body .bigPhoto {
-  width: 20vw;
-  height: auto;
-}
-
-body .aboutContainer {
+body .titles #subTitle {
   width: 80vw;
   margin-left: 10vw;
+  margin-top: 1.5rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 415px) {
-  body .aboutContainer img {
-    width: 80vw;
-    height: auto;
-    margin: 3vw 0vw 2vw 0vw;
+  body .titles #subTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 }
 
-body .aboutContainer .widthChange {
-  width: 40vw;
+body .titles #subTitle span {
+  font-weight: 900;
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 415px) {
-  body .aboutContainer .widthChange {
-    width: 80vw;
-    height: auto;
-    margin: 3vw 0vw 2vw 0vw;
-  }
+body .converter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
 }
 
-body .aboutContainer #title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+body .converter form {
+  margin: 3rem auto;
 }
 
-@media screen and (max-width: 415px) {
-  body .aboutContainer #title {
-    margin-top: 2vw;
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-  }
-}
-
-body .aboutContainer .aboutRow {
-  margin-bottom: 7rem;
+body .converter form .formContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,35 +415,94 @@ body .aboutContainer .aboutRow {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-@media screen and (max-width: 415px) {
-  body .aboutContainer .aboutRow {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+body .converter form .formContainer .inputGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-body .aboutContainer .aboutRow #desc {
-  font-size: 2rem;
-  text-align: justify;
-  margin: 0vw 1vw 0vw 1vw;
-}
-
-@media screen and (max-width: 415px) {
-  body .aboutContainer .aboutRow #desc {
-    font-weight: 500;
-    font-size: 1.5rem;
-  }
-}
-
-body .aboutContainer .aboutRow #desc span {
+body .converter form .formContainer .inputGroup label {
+  color: #fff;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
-/*# sourceMappingURL=about.css.map */
+
+body .converter form .formContainer .inputGroup input {
+  color: #002792;
+  width: 20vw;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 5vw 0 0;
+  background-color: #fff;
+}
+
+body .converter form .formContainer .inputGroup input:focus {
+  outline: none;
+}
+
+body .converter form .formContainer .inputGroup select {
+  color: #002792;
+  width: 5vw;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+body .converter form .formContainer .inputGroup select:focus {
+  outline: none;
+}
+
+body .converter form .formContainer .inputGroup select option {
+  color: #002792;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+body .converter form button {
+  margin: 2rem auto auto auto;
+  color: #002792;
+  background-color: #fff;
+  width: 10vw;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+body .converter form button:hover {
+  color: #fff;
+  background-color: #002792;
+}
+
+body .converter form button:focus {
+  outline: none;
+}
+
+body .converter .result {
+  margin: 3rem auto;
+}
+
+body .converter .result h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+body .converter .result b {
+  font-size: 2.5rem;
+}
+
+body .converter .result .results {
+  text-align: center;
+  font-size: 2.5rem;
+}
+/*# sourceMappingURL=converter.css.map */

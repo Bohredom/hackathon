@@ -325,6 +325,16 @@ body {
             }
         }
 
+        .widthChange {
+            width: 40vw;
+
+            @include mobileIphone {
+                width: 80vw;
+                height: auto;
+                margin: 3vw 0vw 2vw 0vw;
+            }
+        }
+
         #title {
             font-size: 3.5rem;
             font-weight: 700;

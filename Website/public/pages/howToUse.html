@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/howToUse/howToUse.css" />
+	<link rel="stylesheet" href="../css/aboutNew/about.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -31,8 +31,9 @@
 		<div class="right">
 			<ul id="navList">
 				<li id="navListItem"><a href="../index.html">Home</a></li>
-				<li id="navListItem"><a href="../pages/contact.html">Contact</a></li>
-				<li id="navListItem"><a href="../pages/about.html">About</a></li>
+				<li id="navListItem"><a href="./converter.html">Converter</a></li>
+				<li id="navListItem"><a href="./contact.html">Contact</a></li>
+				<li id="navListItem"><a href="./about.html">About</a></li>
 				<li id="navListItem"><a href="./howToUse.html"><span>How to Use</span></a></li>
 				<li id="navListItem"><a href="https://github.com/Bohredom/hackathon"><img id="github"
 							src="../img/git.png" alt="GitHub"></a></li>
@@ -50,6 +51,9 @@
 				<ul id="menu">
 					<a href="../index.html">
 						<li>Home</li>
+					</a>
+					<a href="./converter.html">
+						<li>Unit Converter</li>
 					</a>
 					<a href="./about.html">
 						<li>About</li>
@@ -79,48 +83,50 @@
 		})
 	</script>
 
-	<div class="cont">
-		<h1 id="head">How To Use</h1>
-		<p id="desc">Even if our goal is to make astronomical observations
-			 more clear, sometimes it can be very difficult for individuals. 
-			 Please walk through the tutorial and don’t forget to contact us. </p>
-		<div class="paras">
-			<img src="../img/bohredomHome.png" alt="" id="image">
-			<p id="desc">In the homepage of Bohredom you will see three 
-				instrument groups that has different images with variety 
-				of wavelengths. You can click on them and see 360° combined 
+	<div class="aboutContainer">
+		<div id="title">How To Use</div>
+		<div class="aboutRow">
+			<div id="desc">Even if our goal is to make astronomical observations
+				more clear, sometimes it can be very difficult for individuals.
+				Please walk through the tutorial and don’t forget to contact us. </div>
+		</div>
+		<div class="aboutRow">
+			<img class="widthChange" src="../img/bohredomHome.png" alt="" id="image">
+			<div id="desc">In the homepage of Bohredom you will see three
+				instrument groups that has different images with variety
+				of wavelengths. You can click on them and see 360° combined
 				skymaps. These skymaps show 100% of sky and can be downloaded
-				 with a single button click.</p>
+				with a single button click.</div>
 		</div>
-		<div class="paras">
-			<img src="../img/bohredom3dPSVNoFilter.png" alt="" id="image">
-			<p id="desc">And here is the map! You can look around by dragging 
-				your mouse and zoom by scrolling. You will see three buttons: 
-				at the left hamburger menu and info, at the right filter menu 
-				respectively. These allow you to see whole map without any 
+		<div class="aboutRow">
+			<p id="desc">And here is the map! You can look around by dragging
+				your mouse and zoom by scrolling. You will see three buttons:
+				at the left hamburger menu and info, at the right filter menu
+				respectively. These allow you to see whole map without any
 				distraction unless you wanted to. Let’s see how these buttons work.</p>
+			<img class="widthChange" src="../img/bohredom3dPSVNoFilter.png" alt="" id="image">
 		</div>
-		<div class="paras">
-			<img src="../img/bohredom3dPSVFilter.png" alt="" id="image">
-			<p id="desc">By clicking select filter button you will see a 
-				menu like that. You can move around the instrument groups 
-				with the dropdown menu on top. Other six buttons will show 
-				the whole sky in different wavelengths. Note that, some 
+		<div class="aboutRow">
+			<img class="widthChange" src="../img/bohredom3dPSVFilter.png" alt="" id="image">
+			<p id="desc">By clicking select filter button you will see a
+				menu like that. You can move around the instrument groups
+				with the dropdown menu on top. Other six buttons will show
+				the whole sky in different wavelengths. Note that, some
 				instrument groups cannot get some data of wavelengths.</p>
 		</div>
-		<div class="paras">
-			<img src="../img/bohredom3dPSVHamburger.png" alt="" id="image">
-			<p id="desc">If you desire to turn back to home page whilst 
-				you are travelling at 360° combined sky map, you can use 
-				the hamburger menu. In the menu, it is possible to visit 
+		<div class="aboutRow">
+			<p id="desc">If you desire to turn back to home page whilst
+				you are travelling at 360° combined sky map, you can use
+				the hamburger menu. In the menu, it is possible to visit
 				about, contact and how to use sections as well. </p>
+			<img class="widthChange" src="../img/bohredom3dPSVHamburger.png" alt="" id="image">
 		</div>
-		<div class="paras">
-			<img src="../img/bohredomAboutTelescope.png" alt="" id="image">
-			<p id="desc">By clicking information button 
-				(or more info button in select filter menu) 
-				you will be navigated to this page. You can get 
-				information about the instrument group and wavelengths. 
+		<div class="aboutRow">
+			<img class="widthChange" src="../img/bohredomAboutTelescope.png" alt="" id="image">
+			<p id="desc">By clicking information button
+				(or more info button in select filter menu)
+				you will be navigated to this page. You can get
+				information about the instrument group and wavelengths.
 				Clicking “Go Back” will get you back the last page you visited.</p>
 		</div>
 	</div>

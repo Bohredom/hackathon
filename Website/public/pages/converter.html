@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/converter/converter.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Bohredom Converter</title>
+</head>
+
+<body class='body'>
+    <navbar class="navBar">
+        <a href="../index.html" id="logo">
+            <img src="../img/logoRenkli.png" id="imgTop" alt="logo">
+            <img src="../img/logo.png" id="imgBot" alt="logo">
+            <img src="../img/bohrAtomRenkli.png" id="mImgTop" alt="logo">
+            <img src="../img/bohrAtom.png" id="mImgBot" alt="logo">
+        </a>
+        <div class="right">
+            <ul id="navList">
+                <li id="navListItem"><a href="../index.html">Home</a></li>
+                <li id="navListItem"><a href="./index.html">Unit Converter</a></li>
+                <li id="navListItem"><a href="./contact.html">Contact</a></li>
+                <li id="navListItem"><a href="./about.html">About</a></li>
+                <li id="navListItem"><a href="./howToUse.html"><span>How to Use</span></a></li>
+                <li id="navListItem"><a href="https://github.com/Bohredom/hackathon"><img id="github"
+                            src="../img/git.png" alt="GitHub"></a></li>
+            </ul>
+        </div>
+        <div class="navigation" role="navigation">
+            <div id="menuToggle">
+
+                <input class='navBtn' type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./converter.html">
+                        <li>Unit Converter</li>
+                    </a>
+                    <a href="./pages/about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="./pages/contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="./pages/howToUse.html">
+                        <li id="howToUse">How to Use</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </navbar>
+    <header class="titles">
+        <h1 id="title">Start Converting Units</h1>
+    </header>
+
+    <div class="converter">
+        <form id="converterForm" action="">
+            <div class="formContainer">
+                <div class="inputGroup">
+                    <label for="iValue">Value</label>
+                    <input type="text" name="iValue" id="inputValue">
+                </div>
+                <div class="inputGroup">
+                    <label id="unit" for="unit">Unit</label>
+                    <select name="unit" id="inputUnit">
+                        <option value="eV">eV</option>
+                        <option value="Hz">Hz</option>
+                        <option value="lambda">λ</option>
+                    </select>
+                </div>
+            </div>
+            <button id='converterButton' type="button" onclick="getValues()">Convert</button>
+        </form>
+
+        <div class="result">
+            <h1>Results</h1>
+            <div class="results resultOne"></div>
+            <div class="results resultTwo"></div>
+            <div class="results resultThree"></div>
+        </div>
+    </div>
+
+    <script>
+        var button = document.querySelector('.navBtn');
+        var clicked = 0;
+        button.addEventListener('click', function () {
+            if (clicked == 0) {
+                document.querySelector('html').style.position = 'fixed';
+                clicked = 1;
+            } else {
+                document.querySelector('html').style.position = 'unset';
+                clicked = 0;
+            }
+        })
+
+        var form = document.querySelector('#converterForm');
+        var convBtn = document.querySelector('#converterButton');
+
+        function getValues() {
+            var iUnit = form.elements['unit'].value;
+            var iVal = form.elements['iValue'].value;
+            var resultOne = document.querySelector('.resultOne');
+            var resultTwo = document.querySelector('.resultTwo');
+            var resultThree = document.querySelector('.resultThree');
+            const PI =
+                3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249141273724587006606315588174881520920962829254091715364369259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235377593751957781857780532171226806613001927876611195909216420198938095257201065485863278865936153381827968230301952035301852968995773622599413891249721775283479131515574857242454150695950829533116861727855889075098381754637464939319;
+            const h = 4.135667696 * Math.pow(10, -15);
+            const hR = 6.582119569 * Math.pow(10, -16);
+            const c = 299792458;
+            form.reset();
+
+            if (iUnit == 'eV') {
+                var f = iVal / h;
+                var lambda = c / f;
+                var w = iVal / hR;
+
+                resultOne.innerHTML = "<b>Frequency</b>: ~" + f + " Hz";
+                resultTwo.innerHTML = "<b>Wavelength</b>: ~" + lambda + " m";
+                resultThree.innerHTML = "<b>Angular Velocity</b>: ~" + w + " Rad/sec";
+
+            } else if (iUnit == 'Hz') {
+                var e = h * iVal;
+                var w = e / hR;
+                var lambda = c / iVal;
+
+                resultOne.innerHTML = "<b>Energy</b>: ~" + e + " eV";
+                resultTwo.innerHTML = "<b>Wavelength</b>: ~" + lambda + " m";
+                resultThree.innerHTML = "<b>Angular Velocity</b>: ~" + w + " Rad/sec";
+
+            } else if (iUnit == 'lambda') {
+                var f = c / iVal;
+                var e = h * f;
+                var w = e / hR;
+
+                resultOne.innerHTML = "<b>Frequency</b>: ~" + f + " Hz";
+                resultTwo.innerHTML = "<b>Energy</b>: ~" + e + " eV";
+                resultThree.innerHTML = "<b>Angular Velocity</b>: ~" + w + " Rad/sec";
+            }
+        }
+    </script>
+</body>
+
+</html>
