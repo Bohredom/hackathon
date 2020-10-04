@@ -16,41 +16,52 @@ body {
 
     //////////////////////////////////////
     .dropbtn {
-      background-color: #3498DB;
+      background-color: #002792;
       color: white;
       padding: 16px;
       font-size: 16px;
       border: none;
       cursor: pointer;
+      font-family: $font;
+      font-weight: 600;
     }
 
     .dropbtn:hover,
     .dropbtn:focus {
-      background-color: #2980B9;
+      background-color: white;
+      color:#002792;
+      transition: ease-in-out 300ms;
     }
 
     .dropdown {
       position: relative;
       display: flex;
       flex-direction: row;
+      margin-left: 7.6vw;
     }
 
     .dropdown-content {
       display: none;
       position: absolute;
       margin-top: 48px;
-      background-color: #f1f1f1;
-      min-width: 160px;
-      overflow: auto;
+      width: 8.8vw;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 80;
+      padding:0;
+      text-align: center;
+      margin-left:0;
     }
 
     .dropdown-content a {
       color: black;
-      padding: 12px 16px;
+      padding: .8vw 1vw .8vw 1vw;
       text-decoration: none;
       display: block;
+      margin-left:0;
+      background-color: white;
+      color: #002792;
+      font-family: $font;
+
     }
 
     .dropdown a:hover {
@@ -113,6 +124,7 @@ body {
             font-weight: 600;
             text-decoration: none;
             border: none;
+            cursor: pointer;
         }
         .moreInfo{
             text-align: center;
@@ -128,6 +140,7 @@ body {
             font-weight: 700;
             text-decoration: none;
             border: none;
+            cursor: pointer;
         }
     }
   }
