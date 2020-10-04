@@ -241,7 +241,7 @@ body .navBar .navigation #menuToggle {
   display: block;
   position: absolute;
   top: 0px;
-  left: 325px;
+  left: 335px;
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -271,13 +271,15 @@ body .navBar .navigation #menuToggle input {
 
 body .navBar .navigation #menuToggle span {
   display: block;
-  width: 33px;
+  width: 32px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
   background: #ffffff;
   border-radius: 3px;
   z-index: 1;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
   -webkit-transform-origin: 4px 0px;
           transform-origin: 4px 0px;
   -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -298,20 +300,20 @@ body .navBar .navigation #menuToggle span:nth-last-child(2) {
 
 body .navBar .navigation #menuToggle input:checked ~ span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
+  -webkit-transform: translate(0px, -21px) rotate(45deg);
+          transform: translate(0px, -21px) rotate(45deg);
   background: #ffffff;
 }
 
 body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  -webkit-transform: translate(0px, -20px) rotate(0deg) scale(0.2, 0.2);
+          transform: translate(0px, -20px) rotate(0deg) scale(0.2, 0.2);
 }
 
 body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0px, -1px);
-          transform: rotate(-45deg) translate(0px, -1px);
+  -webkit-transform: translate(0px, -20px) rotate(-45deg);
+          transform: translate(0px, -20px) rotate(-45deg);
 }
 
 body .navBar .navigation #menuToggle #menu {

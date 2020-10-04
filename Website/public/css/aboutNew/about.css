@@ -230,7 +230,7 @@ body .navBar .navigation #menuToggle {
   display: block;
   position: absolute;
   top: 0px;
-  left: 325px;
+  left: 335px;
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -260,13 +260,15 @@ body .navBar .navigation #menuToggle input {
 
 body .navBar .navigation #menuToggle span {
   display: block;
-  width: 33px;
+  width: 32px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
   background: #ffffff;
   border-radius: 3px;
   z-index: 1;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
   -webkit-transform-origin: 4px 0px;
           transform-origin: 4px 0px;
   -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -287,20 +289,20 @@ body .navBar .navigation #menuToggle span:nth-last-child(2) {
 
 body .navBar .navigation #menuToggle input:checked ~ span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
+  -webkit-transform: translate(0px, -21px) rotate(45deg);
+          transform: translate(0px, -21px) rotate(45deg);
   background: #ffffff;
 }
 
 body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  -webkit-transform: translate(0px, -20px) rotate(0deg) scale(0.2, 0.2);
+          transform: translate(0px, -20px) rotate(0deg) scale(0.2, 0.2);
 }
 
 body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0px, -1px);
-          transform: rotate(-45deg) translate(0px, -1px);
+  -webkit-transform: translate(0px, -20px) rotate(-45deg);
+          transform: translate(0px, -20px) rotate(-45deg);
 }
 
 body .navBar .navigation #menuToggle #menu {
@@ -358,36 +360,72 @@ body .titles #title {
   }
 }
 
+body .bigPhoto {
+  width: 20vw;
+  height: auto;
+}
+
 body .aboutContainer {
   width: 80vw;
   margin-left: 10vw;
 }
 
-body .aboutContainer .aboutRow {
-  margin-bottom: 7rem;
+@media screen and (max-width: 415px) {
+  body .aboutContainer img {
+    width: 80vw;
+    height: auto;
+    margin: 3vw 0vw 2vw 0vw;
+  }
 }
 
-body .aboutContainer .aboutRow #title {
+body .aboutContainer #title {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 415px) {
-  body .aboutContainer .aboutRow #title {
+  body .aboutContainer #title {
     margin-top: 2vw;
     font-size: 3rem;
     font-weight: 600;
+    text-align: center;
+  }
+}
+
+body .aboutContainer .aboutRow {
+  margin-bottom: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 415px) {
+  body .aboutContainer .aboutRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 body .aboutContainer .aboutRow #desc {
   font-size: 2rem;
+  text-align: justify;
+  margin: 0vw 1vw 0vw 1vw;
 }
 
 @media screen and (max-width: 415px) {
   body .aboutContainer .aboutRow #desc {
     font-weight: 500;
+    font-size: 1.5rem;
   }
 }
 
