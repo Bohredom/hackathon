@@ -34,7 +34,8 @@ body {
 	background: $bgColor;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 7rem;
+	padding-bottom: 9.5rem;
+	position: relative;
 
 	@include mobileIphone {
 		width: auto;
@@ -208,8 +209,8 @@ body {
 			#menuToggle {
 				display: block;
 				position: absolute;
-				top: -15px;
-				left: 300px;
+				top: 0px;
+				left: 325px;
 				z-index: 1;
 				user-select: none;
 
@@ -275,7 +276,7 @@ body {
 					width: 350px;
 					height: 110vh;
 					margin: -100px 0 0 -100px;
-					padding: 50px;
+					padding: 50px 50px 50px 12px;
 					padding-top: 125px;
 					background: #232323;
 					list-style-type: none;
@@ -308,7 +309,7 @@ body {
 
 	.titles {
 		text-align: center;
-		margin: .5rem 0 0 0;
+		margin: 3rem 0 0 0;
 		width: 100vw;
 
 		#title {
@@ -395,7 +396,7 @@ body {
 			}
 
 			#desc {
-				font-size: 1vw;
+				font-size: 1.5rem;
 				text-align: justify;
 				margin: 1.5rem 2rem 2rem 2rem;
 

@@ -22,6 +22,12 @@ body #filterMenuBtn {
   z-index: 99;
 }
 
+@media screen and (max-width: 415px) {
+  body #filterMenuBtn {
+    margin-top: 2vw;
+  }
+}
+
 body #filterMenuBtn:hover {
   color: #fff;
   background-color: #002792;
@@ -44,6 +50,13 @@ body .maskBox {
   transition: ease .3s;
 }
 
+@media screen and (max-width: 415px) {
+  body .maskBox {
+    width: 80vw;
+    margin-left: 20vw;
+  }
+}
+
 body .maskBox .dropbtn {
   background-color: #0032bd;
   color: white;
@@ -56,6 +69,12 @@ body .maskBox .dropbtn {
   -webkit-transition: ease .3s;
   transition: ease .3s;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 415px) {
+  body .maskBox .dropbtn {
+    margin-left: 2.5rem;
+  }
 }
 
 body .maskBox .dropbtn:hover {
