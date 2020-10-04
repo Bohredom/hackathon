@@ -27,8 +27,8 @@ body .maskBox .dropbtn:hover,
 body .maskBox .dropbtn:focus {
   background-color: white;
   color: #002792;
-  -webkit-transition: ease-in-out 300ms;
-  transition: ease-in-out 300ms;
+  -webkit-transition: ease-out 300ms;
+  transition: ease-out 300ms;
 }
 
 body .maskBox .dropdown {
@@ -41,6 +41,8 @@ body .maskBox .dropdown {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 7.6vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 body .maskBox .dropdown-content {
@@ -58,7 +60,7 @@ body .maskBox .dropdown-content {
 
 body .maskBox .dropdown-content a {
   color: black;
-  padding: .8vw 1vw .8vw 1vw;
+  padding: 0.8vw 1vw 0.8vw 1vw;
   text-decoration: none;
   display: block;
   margin-left: 0;
@@ -112,15 +114,6 @@ body .maskBox .dikeyKutu #gBox {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  border: none;
-}
-
-body .maskBox .dikeyKutu #gBox:hover {
-  cursor: pointer;
-}
-
-body .maskBox .dikeyKutu #gBox:focus {
-  outline: none;
 }
 
 body .maskBox .yatayKutu {
@@ -142,8 +135,8 @@ body .maskBox .yatayKutu .export {
   margin-left: 2%;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  border-radius: 5px;
-  color: #FFFFFF;
+  border-radius: 10px;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -153,7 +146,7 @@ body .maskBox .yatayKutu .export {
 
 body .maskBox .yatayKutu .moreInfo {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 40%;
   font-family: Montserrat;
   margin-left: 10%;
@@ -166,5 +159,21 @@ body .maskBox .yatayKutu .moreInfo {
   text-decoration: none;
   border: none;
   cursor: pointer;
+}
+
+body .maskBox .yatayKutu .export:hover,
+body .maskBox .yatayKutu .export:focus {
+  background-color: white;
+  color: #002792;
+  -webkit-transition: ease-out 300ms;
+  transition: ease-out 300ms;
+}
+
+body .maskBox .yatayKutu .moreInfo:hover,
+body .maskBox .yatayKutu .moreInfo:focus {
+  background-color: #002792;
+  color: #ffffff;
+  -webkit-transition: ease-out 300ms;
+  transition: ease-out 300ms;
 }
 /*# sourceMappingURL=masks.css.map */
