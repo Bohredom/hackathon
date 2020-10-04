@@ -11,17 +11,65 @@
 <body>
 
     <div class="maskBox">
-
-        <div class="dikeyKutu">
-            <div class="yatayKutu">
-                <p>Gama niba</p>
+        <form action="./masks.html" method="POST">
+            <div class="dikeyKutu">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">Home</a>
+                      <a href="#about">About</a>
+                      <a href="#contact">Contact</a>
+                    </div>
+                  </div>
             </div>
-            <div class="yatayKutu">
-                <input type="checkbox">
+            <hr class="mains">
+            <div class="dikeyKutu">
+                    <a id="gBox" href="#">Gamma rays</a>
             </div>
-        </div>
+            <hr class="subs">
+            <div class="dikeyKutu">
+                <a id="gBox" href="#">X-rays</a>
+            </div>
+            <hr class="subs">
+            <div class="dikeyKutu">
+                <a id="gBox" href="#">UV rays</a>
+            </div>
+            <hr class="subs">
+            <div class="dikeyKutu">
+                <a id="gBox" href="#">Optic rays</a>
+            </div>
+            <hr class="subs">
+            <div class="dikeyKutu">
+                <a id="gBox" href="#">Infrared rays</a>
+            </div>
+            <hr class="mains">
+            <div class="yatayKutu">
+                <button class="export">Export as .png</button>
+                <button class="moreInfo">More Info</button>
+            </div>
+        </form>
     </div>
-
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.click = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +12,60 @@ body .maskBox {
   padding: 0;
 }
 
+body .maskBox .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+body .maskBox .dropbtn:hover, body .maskBox .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+body .maskBox .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+body .maskBox .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body .maskBox .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+body .maskBox .dropdown a:hover {
+  background-color: #ddd;
+}
+
+body .maskBox .show {
+  display: block;
+}
+
+body .maskBox hr.mains {
+  border: white solid 2px;
+  margin: 0% 15% 0 15%;
+}
+
+body .maskBox hr.subs {
+  border: #002077 solid 1px;
+  margin: 0% 25% 0 25%;
+}
+
 body .maskBox .dikeyKutu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,10 +74,28 @@ body .maskBox .dikeyKutu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: aqua solid 2px;
+  height: 8vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body .maskBox .dikeyKutu .yatayKutu {
+body .maskBox .dikeyKutu a {
+  text-align: center;
+  background-color: white;
+  width: 40%;
+  font-family: Montserrat;
+  margin-left: 30%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 5px;
+  color: #002792;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+body .maskBox .yatayKutu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,6 +103,5 @@ body .maskBox .dikeyKutu .yatayKutu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: violet solid 2px;
 }
 /*# sourceMappingURL=masks.css.map */

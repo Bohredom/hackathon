@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "../../../css/mobile sass/mobile.scss";
 
+$font: Montserrat;
 body {
   margin: 0;
   padding: 0;
@@ -9,15 +11,83 @@ body {
     width: 24vw;
     margin-left: 76vw;
     padding: 0;
+    //////////////////////////////////////
+    .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+    //////////////////////////////////////
+    hr.mains {
+      border: white solid 2px;
+      margin: 0% 15% 0 15%;
+    }
+    hr.subs {
+        border: #002077 solid 1px;
+        margin: 0% 25% 0 25%;
+        
+      }
     .dikeyKutu {
       display: flex;
       flex-direction: row;
-      border: aqua solid 2px;
-      .yatayKutu {
+      //border: aqua solid 2px;
+      height: 8vh;
+      align-items: center;
+
+      a {
+        text-align: center;
+        background-color: white;
+        width: 40%;
+        font-family: $font;
+        margin-left: 30%;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        border-radius: 5px;
+        color:#002792 ;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+    .yatayKutu{
         display: flex;
         flex-direction: row;
-        border: violet solid 2px;
-      }
+        .export{
+            
+        }
     }
   }
 }
