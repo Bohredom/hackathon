@@ -43,6 +43,76 @@
 
     <a id="info" href="./swiftFermiInfo.html"><img src="../../../img/info.png" alt=""></a>
 
+    <button id="filterMenuBtn">Select Filter</button>
+
+    <div class="maskBox">
+        <div class="dropdown">
+            <button class="dropbtn">Select Instrument</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../2MASS/2mass.html">2MASS</a>
+                <a href="./swift_UV.html">Swift</a>
+                <a href="./fermi_Y.html">Fermi</a>
+                <a href="../IRAS/iras_color.html">IRAS</a>
+            </div>
+        </div>
+        <hr class="mains">
+        <div class="dikeyKutu">
+            <button disabled data-text="This filter is not available at this instrument." id="gBox">Gamma rays</button>
+        </div>
+        <div class="dikeyKutu">
+            <a href="./swift_XR.html" id="gBox">X-rays</a>
+        </div>
+        <div class="dikeyKutu">
+            <a href="./swift_UV.html" id="gBox">UV rays</button>
+        </div>
+        <div class="dikeyKutu">
+            <button disabled data-text="This filter is not available at this instrument." id="gBox">Infrared
+                12um</button>
+        </div>
+        <div class="dikeyKutu">
+            <button disabled data-text="This filter is not available at this instrument." id="gBox">Infrared
+                100um</button>
+        </div>
+        <div class="dikeyKutu">
+            <button disabled data-text="This filter is not available at this instrument." id="gBox">Infrared
+                Colored</button>
+        </div>
+        <hr class="mains">
+        <div class="yatayKutu">
+            <a href="./swiftFermiInfo.html" class="moreInfo">More Info</a>
+            <a href="./SWIFT_XR.png" download class="export">Export Image</a>
+        </div>
+    </div>
+
+    <script>
+        var filterMenuBtn = document.querySelector('#filterMenuBtn');
+        var dropButton = document.querySelector('.dropbtn');
+        var dropClicked = 0;
+        var filterClicked = 0;
+
+        dropButton.addEventListener('click', function () {
+            if (dropClicked == 0) {
+                document.querySelector('.dropdown-content').style.display = 'unset';
+                dropClicked = 1;
+            } else {
+                document.querySelector('.dropdown-content').style.display = 'none';
+                dropClicked = 0;
+            }
+        })
+        filterMenuBtn.addEventListener('click', function () {
+            if (filterClicked == 0) {
+                document.querySelector('.maskBox').style.transform = 'translateX(0%)';
+                filterMenuBtn.style.color = ''
+                filterClicked = 1;
+                console.log(filterClicked);
+            } else {
+                document.querySelector('.maskBox').style.transform = 'translateX(100%)';
+                filterClicked = 0;
+                console.log(filterClicked);
+            }
+        })
+    </script>
+
     <div id="observer"></div>
     <script>
         var viewer = new PhotoSphereViewer.Viewer({

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import "../../../css/mobile sass/mobile.scss";
+@import "../mobile\ sass/mobile.scss";
 
 $font: Montserrat;
 
@@ -9,18 +9,43 @@ body {
 
 	#filterMenuBtn {
 		position: absolute;
+		right: 0;
+		margin-right: 3vw;
+		margin-top: 6vh;
+		background-color: #fff;
+		color: #002792;
+		border: none;
+		padding: 16px;
+		font-size: 16px;
+		cursor: pointer;
+		font-weight: 600;
+		transition: ease .3s;
+		border-radius: 5px;
+		z-index: 99;
+
+		&:hover {
+			color: #fff;
+			background-color: #002792;
+		}
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	.maskBox {
 		background-color: #002792;
-		height: 100vh;
+		height: 90vh;
 		width: 24vw;
 		margin-left: 76vw;
 		padding: 0;
+		padding-top: 14vh;
+		transform: translateX(100%);
+		transition: ease .3s;
 
 		//////////////////////////////////////
 		.dropbtn {
-			background-color: #002792;
+			background-color: #0032bd;
 			color: white;
 			padding: 16px;
 			font-size: 16px;
@@ -82,7 +107,7 @@ body {
 				border-bottom: none;
 			}
 
-			&:nth-child(3) {
+			&:nth-child(4) {
 				border-radius: 0 0 8px 8px;
 				border: solid 2px #fff;
 				border-top: none;
@@ -141,6 +166,78 @@ body {
 				&:focus {
 					outline: none;
 				}
+
+				&:disabled {
+					background-color: #bbbbbb;
+					color: #002792;
+					text-decoration: line-through;
+					font-style: italic;
+					cursor: default;
+
+					&:before {
+						content: attr(data-text);
+						/* here's the magic */
+						position: absolute;
+
+						/* vertically center */
+						top: 50%;
+						transform: translateY(-50%);
+
+						/* move to right */
+						left: 100%;
+						margin-left: 15px;
+						/* and add a small left margin */
+
+						/* basic styles */
+						width: 200px;
+						padding: 10px;
+						border-radius: 10px;
+						background: #fff;
+						color: #002792;
+						text-align: center;
+
+						display: none;
+						/* hide by default */
+					}
+
+					&:hover:before {
+						display: block;
+					}
+
+					&:before {
+						/* reset defaults */
+						left: initial;
+						margin: initial;
+
+						/* set new values */
+						right: 100%;
+						margin-right: 15px;
+					}
+
+					&:after {
+						content: "";
+						position: absolute;
+
+						/* position tooltip correctly */
+						left: 100%;
+						margin-left: -5px;
+
+						/* vertically center */
+						top: 50%;
+						transform: translateY(-50%);
+
+						/* the arrow */
+						border: 10px solid #fff;
+						border-color: transparent #fff transparent transparent;
+
+						display: none;
+					}
+
+					.tooltip:hover:before,
+					.tooltip:hover:after {
+						display: block;
+					}
+				}
 			}
 
 		}
@@ -152,7 +249,7 @@ body {
 
 			.export {
 				text-align: center;
-				background-color: #002792;
+				background-color: #0032bd;
 				width: 40%;
 				font-family: $font;
 				margin-left: 2%;

@@ -118,6 +118,300 @@ body {
 		}
 	}
 
+	#filterMenuBtn {
+		position: absolute;
+		right: 0;
+		margin-right: 3vw;
+		margin-top: 6vh;
+		background-color: #fff;
+		color: #002792;
+		border: none;
+		padding: 16px;
+		font-size: 16px;
+		cursor: pointer;
+		font-weight: 600;
+		transition: ease .3s;
+		border-radius: 5px;
+		z-index: 99;
+
+		&:hover {
+			color: #fff;
+			background-color: #002792;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.maskBox {
+		background-color: #002792;
+		height: 90vh;
+		width: 24vw;
+		margin-left: 76vw;
+		padding: 0;
+		padding-top: 14vh;
+		transform: translateX(100%);
+		transition: ease .3s;
+		position: absolute;
+		z-index: 70;
+
+		//////////////////////////////////////
+		.dropbtn {
+			background-color: #0032bd;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+			font-family: $font;
+			font-weight: 600;
+			transition: ease .3s;
+			border-radius: 5px;
+		}
+
+		.dropbtn:hover {
+			background-color: white;
+			color: #002792;
+			outline: none;
+		}
+
+		.dropbtn:focus {
+			outline: none;
+		}
+
+		.dropdown {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			margin-left: 7.6vw;
+			padding-top: 1vw;
+			padding-bottom: 1vw;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			margin-top: 48px;
+			width: 15vw;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 80;
+			padding: 0;
+			text-align: center;
+			margin-left: -3vw;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 0.8vw 1vw 0.8vw 1vw;
+			text-decoration: none;
+			display: block;
+			margin-left: 0;
+			background-color: white;
+			color: #002792;
+			font-family: $font;
+			font-weight: 700;
+			transition: .3s ease;
+			border: solid 2px #fff;
+			font-size: 1.6rem;
+
+			&:nth-child(1) {
+				border-radius: 8px 8px 0 0;
+				border: solid 2px #fff;
+				border-bottom: none;
+			}
+
+			&:nth-child(4) {
+				border-radius: 0 0 8px 8px;
+				border: solid 2px #fff;
+				border-top: none;
+			}
+		}
+
+		.dropdown a:hover {
+			background-color: #002792;
+			color: white;
+		}
+
+		.show {
+			display: block;
+		}
+
+		//////////////////////////////////////
+		hr.mains {
+			border: white solid 1px;
+			margin: 0% 15% 0 15%;
+		}
+
+		hr.subs {
+			border: #002077 solid 1px;
+			margin: 0% 25% 0 25%;
+		}
+
+		.dikeyKutu {
+			display: flex;
+			flex-direction: row;
+			//border: aqua solid 2px;
+			height: 8vh;
+			align-items: center;
+
+			#gBox {
+				text-align: center;
+				background-color: white;
+				width: 40%;
+				font-family: $font;
+				margin-left: 30%;
+				padding-top: 1.2vh;
+				padding-bottom: 1.2vh;
+				border-radius: 5px;
+				color: #002792;
+				font-size: 1.6rem;
+				font-weight: 600;
+				text-decoration: none;
+				border: none;
+				transition: ease .3s;
+
+				&:hover {
+					cursor: pointer;
+					background-color: #002792;
+					color: white;
+				}
+
+				&:focus {
+					outline: none;
+				}
+
+				&:disabled {
+					background-color: #bbbbbb;
+					color: #002792;
+					text-decoration: line-through;
+					font-style: italic;
+					cursor: default;
+
+					&:before {
+						content: attr(data-text);
+						/* here's the magic */
+						position: absolute;
+
+						/* vertically center */
+						top: 50%;
+						transform: translateY(-50%);
+
+						/* move to right */
+						left: 100%;
+						margin-left: 15px;
+						/* and add a small left margin */
+
+						/* basic styles */
+						width: 200px;
+						padding: 10px;
+						border-radius: 10px;
+						background: #fff;
+						color: #002792;
+						text-align: center;
+
+						display: none;
+						/* hide by default */
+					}
+
+					&:hover:before {
+						display: block;
+					}
+
+					&:before {
+						/* reset defaults */
+						left: initial;
+						margin: initial;
+
+						/* set new values */
+						right: 100%;
+						margin-right: 15px;
+					}
+
+					&:after {
+						content: "";
+						position: absolute;
+
+						/* position tooltip correctly */
+						left: 100%;
+						margin-left: -5px;
+
+						/* vertically center */
+						top: 50%;
+						transform: translateY(-50%);
+
+						/* the arrow */
+						border: 10px solid #fff;
+						border-color: transparent #fff transparent transparent;
+
+						display: none;
+					}
+
+					.tooltip:hover:before,
+					.tooltip:hover:after {
+						display: block;
+					}
+				}
+			}
+
+		}
+
+		.yatayKutu {
+			margin-top: 2vh;
+			display: flex;
+			flex-direction: row;
+
+			.export {
+				text-align: center;
+				background-color: #0032bd;
+				width: 40%;
+				font-family: $font;
+				margin-left: 2%;
+				padding-top: 2vh;
+				padding-bottom: 2vh;
+				border-radius: 10px;
+				color: #ffffff;
+				font-size: 1.6rem;
+				font-weight: 600;
+				text-decoration: none;
+				border: none;
+				cursor: pointer;
+				transition: ease .3s;
+			}
+
+			.moreInfo {
+				text-align: center;
+				background-color: #ffffff;
+				width: 40%;
+				font-family: $font;
+				margin-left: 10%;
+				padding-top: 2vh;
+				padding-bottom: 2vh;
+				border-radius: 10px;
+				color: #002792;
+				font-size: 1.6rem;
+				font-weight: 700;
+				text-decoration: none;
+				border: none;
+				cursor: pointer;
+				transition: ease .3s;
+			}
+
+			.export:hover,
+			.export:focus {
+				background-color: white;
+				color: #002792;
+				outline: none;
+			}
+
+			.moreInfo:hover,
+			.moreInfo:focus {
+				background-color: #002792;
+				color: #ffffff;
+			}
+		}
+	}
+
 	#info {
 		position: absolute;
 		top: 45px;
