@@ -20,11 +20,13 @@
 	<title>Bohredom How To Use</title>
 </head>
 
-<body>
+<body class='body'>
 	<navbar class="navBar">
 		<a href="../index.html" id="logo">
 			<img src="../img/logoRenkli.png" id="imgTop" alt="logo">
 			<img src="../img/logo.png" id="imgBot" alt="logo">
+			<img src="../img/bohrAtomRenkli.png" id="mImgTop" alt="logo">
+			<img src="../img/bohrAtom.png" id="mImgBot" alt="logo">
 		</a>
 		<div class="right">
 			<ul id="navList">
@@ -36,8 +38,46 @@
 							src="../img/git.png" alt="GitHub"></a></li>
 			</ul>
 		</div>
+
+		<div class="navigation" role="navigation">
+			<div id="menuToggle">
+
+				<input class='navBtn' type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<a href="../index.html">
+						<li>Home</li>
+					</a>
+					<a href="./about.html">
+						<li>About</li>
+					</a>
+					<a href="./contact.html">
+						<li>Contact</li>
+					</a>
+					<a href="./howToUse.html">
+						<li id="howToUse">How to Use</li>
+					</a>
+				</ul>
+			</div>
+		</div>
 	</navbar>
 
+	<script>
+		var button = document.querySelector('.navBtn');
+		var clicked = 0;
+		button.addEventListener('click', function () {
+			if (clicked == 0) {
+				document.querySelector('html').style.position = 'fixed';
+				clicked = 1;
+			} else {
+				document.querySelector('html').style.position = 'unset';
+				clicked = 0;
+			}
+		})
+	</script>
 </body>
 
 </html>
