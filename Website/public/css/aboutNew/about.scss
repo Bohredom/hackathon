@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "../mobile sass/mobile.scss";
+$font: Montserrat;
+$bgColor: linear-gradient(#000c2d, #00195e);
+$color: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: $color;
+    text-decoration: none;
+}
+
+html {
+    height: auto;
+    /* background: linear-gradient(#000c2d, #00195e); */
+    background: #000c2d;
+}
+
+html,
+body {
+    @include mobileIphone {
+        overflow-x: hidden !important;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+    background: $bgColor;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 5vh;
+
+
+    .navBar {
+        height: 12vh;
+        width: 100vw;
+        background-color: none; //TODO Bg blur koyualacak
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 0 0 3rem;
+            padding: 0;
+            color: $color;
+            text-decoration: none;
+            height: 12vh;
+            align-items: center;
+
+            #imgTop {
+                visibility: hidden;
+                opacity: 0;
+                z-index: 99;
+
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            #imgBot {
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            #mImgTop {
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+
+            #mImgBot {
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+
+            img {
+                margin: 1vw 0 0 0;
+                height: 6rem;
+                width: auto;
+                position: absolute;
+                transition: visibility 0.2s, opacity 0.2s linear;
+            }
+
+            &:hover #imgTop {
+                visibility: unset;
+                opacity: 1;
+
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            &:hover #imgBot {
+                visibility: hidden;
+                opacity: 0;
+
+                @include mobileIphone {
+                    display: none;
+                }
+            }
+
+            &:hover #mImgTop {
+                visibility: unset;
+                opacity: 1;
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+
+            &:hover #mImgBot {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+
+                @include mobileIphone {
+                    display: unset;
+                    margin-top: 4vw;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            #navList {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+
+                @include mobileIphone {
+                    display: none;
+                }
+
+                #navListItem {
+                    display: flex;
+                    margin-right: 2.5rem;
+                    align-items: center;
+
+                    a {
+                        font-weight: 600;
+                        font-size: 2rem;
+                        color: $color;
+                        text-decoration: none;
+
+                        span {
+                            background-color: $color;
+                            color: #000c2d;
+                            font-size: 2rem;
+                            padding: 0.5rem 2.5rem 0.7rem;
+                            border-radius: 0.5rem;
+                        }
+                    }
+
+                    #github {
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            position: absolute;
+            display: none;
+
+            @include mobileIphone {
+                display: unset;
+            }
+
+            #menuToggle {
+                display: block;
+                position: absolute;
+                top: -15px;
+                left: 300px;
+                z-index: 1;
+                user-select: none;
+
+                a {
+                    text-decoration: none;
+                    color: #232323;
+                    transition: color 0.3s ease;
+                }
+
+                input {
+                    display: block;
+                    width: 40px;
+                    height: 32px;
+                    position: absolute;
+                    top: -28px;
+                    left: -5px;
+                    cursor: pointer;
+                    opacity: 0;
+                    z-index: 2;
+                    margin: 0;
+                }
+
+                span {
+                    display: block;
+                    width: 33px;
+                    height: 4px;
+                    margin-bottom: 5px;
+                    position: relative;
+                    background: #ffffff;
+                    border-radius: 3px;
+                    z-index: 1;
+                    transform-origin: 4px 0px;
+                    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                        opacity 0.55s ease;
+
+                    &:first-child {
+                        transform-origin: 0% 0%;
+                    }
+
+                    &:nth-last-child(2) {
+                        transform-origin: 0% 100%;
+                    }
+                }
+
+                input:checked~span {
+                    opacity: 1;
+                    transform: rotate(45deg) translate(-2px, -1px);
+                    background: #ffffff;
+                }
+
+                input:checked~span:nth-last-child(3) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+
+                input:checked~span:nth-last-child(2) {
+                    transform: rotate(-45deg) translate(0px, -1px);
+                }
+
+                #menu {
+                    position: absolute;
+                    width: 300px;
+                    height: 110vh;
+                    margin: -100px 0 0 -100px;
+                    padding: 50px;
+                    padding-top: 125px;
+                    background: #232323;
+                    list-style-type: none;
+                    transform: translateX(100%);
+                    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+                }
+
+                #menu li {
+                    padding: 10px 0;
+                    font-size: 22px;
+                    text-align: center;
+                }
+
+                #menu #howToUse {
+                    padding: 10px 0;
+                    margin-bottom: 10px;
+                    font-size: 22px;
+                    color: #000c2d;
+                    background-color: #ffffff;
+                    border-radius: .3rem;
+                }
+
+                input:checked~#menu {
+                    transform: translateX(-35%);
+                }
+
+            }
+        }
+    }
+
+    .titles {
+        text-align: center;
+        margin: 1rem 0 2rem 0;
+        width: 100vw;
+
+        #title {
+            font-size: 4rem;
+            font-weight: 700;
+
+            @include mobileIphone {
+                font-size: 3.5rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .aboutContainer {
+        width: 80vw;
+        margin-left: 10vw;
+
+        .aboutRow {
+            margin-bottom: 7rem;
+
+            #title {
+                font-size: 3.5rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+
+                @include mobileIphone {
+                    margin-top: 2vw;
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+            }
+
+            #desc {
+                font-size: 2rem;
+
+                @include mobileIphone {
+                    font-weight: 500;
+                }
+
+
+                span {
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

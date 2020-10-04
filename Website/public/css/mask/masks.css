@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+body #filterMenuBtn {
+  position: absolute;
+}
+
 body .maskBox {
   background-color: #002792;
   height: 100vh;
@@ -21,14 +25,19 @@ body .maskBox .dropbtn {
   cursor: pointer;
   font-family: Montserrat;
   font-weight: 600;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  border-radius: 5px;
 }
 
-body .maskBox .dropbtn:hover,
-body .maskBox .dropbtn:focus {
+body .maskBox .dropbtn:hover {
   background-color: white;
   color: #002792;
-  -webkit-transition: ease-out 300ms;
-  transition: ease-out 300ms;
+  outline: none;
+}
+
+body .maskBox .dropbtn:focus {
+  outline: none;
 }
 
 body .maskBox .dropdown {
@@ -49,13 +58,13 @@ body .maskBox .dropdown-content {
   display: none;
   position: absolute;
   margin-top: 48px;
-  width: 8.8vw;
+  width: 15vw;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 80;
   padding: 0;
   text-align: center;
-  margin-left: 0;
+  margin-left: -3vw;
 }
 
 body .maskBox .dropdown-content a {
@@ -67,10 +76,27 @@ body .maskBox .dropdown-content a {
   background-color: white;
   color: #002792;
   font-family: Montserrat;
+  font-weight: 700;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border: solid 2px #fff;
+}
+
+body .maskBox .dropdown-content a:nth-child(1) {
+  border-radius: 8px 8px 0 0;
+  border: solid 2px #fff;
+  border-bottom: none;
+}
+
+body .maskBox .dropdown-content a:nth-child(3) {
+  border-radius: 0 0 8px 8px;
+  border: solid 2px #fff;
+  border-top: none;
 }
 
 body .maskBox .dropdown a:hover {
-  background-color: #ddd;
+  background-color: #002792;
+  color: white;
 }
 
 body .maskBox .show {
@@ -114,6 +140,19 @@ body .maskBox .dikeyKutu #gBox {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+  border: none;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+body .maskBox .dikeyKutu #gBox:hover {
+  cursor: pointer;
+  background-color: #002792;
+  color: white;
+}
+
+body .maskBox .dikeyKutu #gBox:focus {
+  outline: none;
 }
 
 body .maskBox .yatayKutu {
@@ -142,6 +181,8 @@ body .maskBox .yatayKutu .export {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
 }
 
 body .maskBox .yatayKutu .moreInfo {
@@ -159,21 +200,20 @@ body .maskBox .yatayKutu .moreInfo {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
 }
 
 body .maskBox .yatayKutu .export:hover,
 body .maskBox .yatayKutu .export:focus {
   background-color: white;
   color: #002792;
-  -webkit-transition: ease-out 300ms;
-  transition: ease-out 300ms;
+  outline: none;
 }
 
 body .maskBox .yatayKutu .moreInfo:hover,
 body .maskBox .yatayKutu .moreInfo:focus {
   background-color: #002792;
   color: #ffffff;
-  -webkit-transition: ease-out 300ms;
-  transition: ease-out 300ms;
 }
 /*# sourceMappingURL=masks.css.map */

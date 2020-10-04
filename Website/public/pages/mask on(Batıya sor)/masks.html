@@ -4,18 +4,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/masks.css">
+	<link rel="stylesheet" href="../../css/mask/masks.css">
 	<title>Document</title>
 </head>
 
 <body>
+
+	<button id="filterMenuBtn">Select Filter</button>
 
 	<div class="maskBox">
 		<div class="dropdown">
 			<button class="dropbtn">Select Telescope </button>
 			<div id="myDropdown" class="dropdown-content">
 				<a href="#">2MASS</a>
-				<a href="#">Fermi</a>
+				<a href="#">Swift/Fermi</a>
 				<a href="#">IRAS</a>
 			</div>
 		</div>
@@ -55,10 +57,10 @@
 				clicked = 0;
 			}
 		})
-        var exportButton = document.querySelector('.export');
-        exportButton.addEventListener('click', function () {
-            document.write('<img src="'+img+'"/>');
-        })
+		var exportButton = document.querySelector('.export');
+		exportButton.addEventListener('click', function () {
+			document.write('<img src="' + img + '"/>');
+		})
 	</script>
 </body>
 
