@@ -23,13 +23,13 @@ html {
 body {
   overflow-x: hidden;
   /* 	overflow-y: hidden; */
-  width: 100%;
-  height: auto;
+  width: 100vh;
+  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#000c2d), to(#00195e));
   background: linear-gradient(#000c2d, #00195e);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 9.5rem;
+  padding-bottom: 40vh;
   position: relative;
 }
 
@@ -243,7 +243,7 @@ body .navBar .navigation #menuToggle {
   display: block;
   position: absolute;
   top: 0px;
-  left: 335px;
+  left: 300px;
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -320,7 +320,7 @@ body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(2) {
 
 body .navBar .navigation #menuToggle #menu {
   position: absolute;
-  width: 350px;
+  width: 300px;
   height: 110vh;
   margin: -100px 0 0 -100px;
   padding: 50px 50px 50px 12px;
@@ -417,6 +417,15 @@ body .converter form .formContainer {
           flex-direction: row;
 }
 
+@media screen and (max-width: 415px) {
+  body .converter form .formContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body .converter form .formContainer .inputGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,6 +434,7 @@ body .converter form .formContainer .inputGroup {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 3vw;
 }
 
 body .converter form .formContainer .inputGroup label {
@@ -442,6 +452,12 @@ body .converter form .formContainer .inputGroup input {
   background-color: #fff;
 }
 
+@media screen and (max-width: 415px) {
+  body .converter form .formContainer .inputGroup input {
+    width: 80vw;
+  }
+}
+
 body .converter form .formContainer .inputGroup input:focus {
   outline: none;
 }
@@ -452,6 +468,12 @@ body .converter form .formContainer .inputGroup select {
   font-size: 2rem;
   font-weight: 700;
   background-color: #fff;
+}
+
+@media screen and (max-width: 415px) {
+  body .converter form .formContainer .inputGroup select {
+    width: 80vw;
+  }
 }
 
 body .converter form .formContainer .inputGroup select:focus {
@@ -477,6 +499,12 @@ body .converter form button {
   border-radius: 5px;
   -webkit-transition: ease .3s;
   transition: ease .3s;
+}
+
+@media screen and (max-width: 415px) {
+  body .converter form button {
+    width: 80vw;
+  }
 }
 
 body .converter form button:hover {

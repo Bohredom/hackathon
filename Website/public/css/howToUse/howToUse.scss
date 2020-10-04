@@ -193,7 +193,7 @@ body {
                 display: block;
                 position: absolute;
                 top: 0px;
-                left: 325px;
+                left: 300px;
                 z-index: 1;
                 user-select: none;
 
@@ -256,7 +256,7 @@ body {
 
                 #menu {
                     position: absolute;
-                    width: 350px;
+                    width: 300px;
                     height: 110vh;
                     margin: -100px 0 0 -100px;
                     padding: 50px 50px 50px 12px;
@@ -302,7 +302,7 @@ body {
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
-            
+
             @include mobileIphone {
                 margin-top: 2vw;
                 font-size: 3rem;

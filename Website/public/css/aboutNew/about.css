@@ -230,7 +230,7 @@ body .navBar .navigation #menuToggle {
   display: block;
   position: absolute;
   top: 0px;
-  left: 335px;
+  left: 300px;
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -307,7 +307,7 @@ body .navBar .navigation #menuToggle input:checked ~ span:nth-last-child(2) {
 
 body .navBar .navigation #menuToggle #menu {
   position: absolute;
-  width: 350px;
+  width: 300px;
   height: 110vh;
   margin: -100px 0 0 -100px;
   padding: 50px 50px 50px 12px;
