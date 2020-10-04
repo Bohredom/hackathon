@@ -13,17 +13,22 @@ body .maskBox {
 }
 
 body .maskBox .dropbtn {
-  background-color: #3498DB;
+  background-color: #002792;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 600;
 }
 
 body .maskBox .dropbtn:hover,
 body .maskBox .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: white;
+  color: #002792;
+  -webkit-transition: ease-in-out 300ms;
+  transition: ease-in-out 300ms;
 }
 
 body .maskBox .dropdown {
@@ -35,25 +40,31 @@ body .maskBox .dropdown {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 7.6vw;
 }
 
 body .maskBox .dropdown-content {
   display: none;
   position: absolute;
   margin-top: 48px;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
+  width: 8.8vw;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 80;
+  padding: 0;
+  text-align: center;
+  margin-left: 0;
 }
 
 body .maskBox .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: .8vw 1vw .8vw 1vw;
   text-decoration: none;
   display: block;
+  margin-left: 0;
+  background-color: white;
+  color: #002792;
+  font-family: Montserrat;
 }
 
 body .maskBox .dropdown a:hover {
@@ -128,6 +139,7 @@ body .maskBox .yatayKutu .export {
   font-weight: 600;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 
 body .maskBox .yatayKutu .moreInfo {
@@ -144,5 +156,6 @@ body .maskBox .yatayKutu .moreInfo {
   font-weight: 700;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=masks.css.map */
