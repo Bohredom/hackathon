@@ -1,0 +1,23 @@
+@import "../../../css/mobile sass/mobile.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  .maskBox {
+    background-color: #002792;
+    height: 100vh;
+    width: 24vw;
+    margin-left: 76vw;
+    padding: 0;
+    .dikeyKutu {
+      display: flex;
+      flex-direction: row;
+      border: aqua solid 2px;
+      .yatayKutu {
+        display: flex;
+        flex-direction: row;
+        border: violet solid 2px;
+      }
+    }
+  }
+}

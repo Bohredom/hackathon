@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .maskBox {
+  background-color: #002792;
+  height: 100vh;
+  width: 24vw;
+  margin-left: 76vw;
+  padding: 0;
+}
+
+body .maskBox .dikeyKutu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: aqua solid 2px;
+}
+
+body .maskBox .dikeyKutu .yatayKutu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: violet solid 2px;
+}
+/*# sourceMappingURL=masks.css.map */
