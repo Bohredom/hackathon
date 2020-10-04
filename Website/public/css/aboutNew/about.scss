@@ -305,14 +305,21 @@ body {
             }
         }
     }
-
+.bigPhoto{
+                width: 20vw;
+                height: auto;
+            }
     .aboutContainer {
         width: 80vw;
         margin-left: 10vw;
+        img{
+            @include mobileIphone {
+                width: 80vw;
+                height: auto;
+                margin:3vw 0vw 2vw 0vw;
 
-        .aboutRow {
-            margin-bottom: 7rem;
-
+            }
+        }
             #title {
                 font-size: 3.5rem;
                 font-weight: 700;
@@ -322,14 +329,31 @@ body {
                     margin-top: 2vw;
                     font-size: 3rem;
                     font-weight: 600;
+                    text-align: center;
                 }
             }
+        .aboutRow {
+            margin-bottom: 7rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @include mobileIphone {
+                
+            flex-direction: column;
+            }
+
+            
+
+
 
             #desc {
                 font-size: 2rem;
+                text-align: justify;
+                margin:0vw 1vw 0vw 1vw;
 
                 @include mobileIphone {
                     font-weight: 500;
+                    font-size: 1.5rem;
                 }
 
 
