@@ -37,7 +37,7 @@ body {
 
     @include mobileIphone {
         width: auto;
-        height: 100vh;
+        height: 100%;
         overflow-x: hidden;
         overflow-y: auto;
         padding-right: 10vw;

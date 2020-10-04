@@ -254,6 +254,7 @@ body .maskBox .dropdown-content a {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   border: solid 2px #fff;
+  font-size: 1.6rem;
 }
 
 body .maskBox .dropdown-content a:nth-child(1) {
