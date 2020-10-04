@@ -217,6 +217,10 @@ body {
 			padding: 0;
 			text-align: center;
 			margin-left: -3vw;
+
+			@include mobileIphone {
+				width: 65vw;
+			}
 		}
 
 		.dropdown-content a {

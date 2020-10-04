@@ -241,6 +241,12 @@ body .maskBox .dropdown-content {
   margin-left: -3vw;
 }
 
+@media screen and (max-width: 415px) {
+  body .maskBox .dropdown-content {
+    width: 65vw;
+  }
+}
+
 body .maskBox .dropdown-content a {
   color: black;
   padding: 0.8vw 1vw 0.8vw 1vw;
