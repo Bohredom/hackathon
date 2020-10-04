@@ -396,12 +396,12 @@ body {
 			}
 
 			#desc {
-				font-size: 1.5rem;
+				font-size: 1.7rem;
 				text-align: justify;
 				margin: 1.5rem 2rem 2rem 2rem;
 
 				@include mobileIphone {
-					font-size: 4vw;
+					font-size: 1.5rem;
 					margin: 1.5rem 0;
 				}
 			}
