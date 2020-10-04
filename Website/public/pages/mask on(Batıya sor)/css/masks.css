@@ -21,24 +21,32 @@ body .maskBox .dropbtn {
   cursor: pointer;
 }
 
-body .maskBox .dropbtn:hover, body .maskBox .dropbtn:focus {
+body .maskBox .dropbtn:hover,
+body .maskBox .dropbtn:focus {
   background-color: #2980B9;
 }
 
 body .maskBox .dropdown {
   position: relative;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 body .maskBox .dropdown-content {
   display: none;
   position: absolute;
+  margin-top: 48px;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 80;
 }
 
 body .maskBox .dropdown-content a {
@@ -57,7 +65,7 @@ body .maskBox .show {
 }
 
 body .maskBox hr.mains {
-  border: white solid 2px;
+  border: white solid 1px;
   margin: 0% 15% 0 15%;
 }
 
