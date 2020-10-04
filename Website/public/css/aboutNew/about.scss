@@ -193,7 +193,7 @@ body {
                 display: block;
                 position: absolute;
                 top: 0px;
-                left: 325px;
+                left: 335px;
                 z-index: 1;
                 user-select: none;
 
@@ -218,13 +218,14 @@ body {
 
                 span {
                     display: block;
-                    width: 33px;
+                    width: 32px;
                     height: 4px;
                     margin-bottom: 5px;
                     position: relative;
                     background: #ffffff;
                     border-radius: 3px;
                     z-index: 1;
+                    transform: translateY(-20px);
                     transform-origin: 4px 0px;
                     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
                         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -241,17 +242,17 @@ body {
 
                 input:checked~span {
                     opacity: 1;
-                    transform: rotate(45deg) translate(-2px, -1px);
+                    transform: translate(0px, -21px) rotate(45deg);
                     background: #ffffff;
                 }
 
                 input:checked~span:nth-last-child(3) {
                     opacity: 0;
-                    transform: rotate(0deg) scale(0.2, 0.2);
+                    transform: translate(0px, -20px) rotate(0deg) scale(0.2, 0.2);
                 }
 
                 input:checked~span:nth-last-child(2) {
-                    transform: rotate(-45deg) translate(0px, -1px);
+                    transform: translate(0px, -20px) rotate(-45deg);
                 }
 
                 #menu {
@@ -305,51 +306,57 @@ body {
             }
         }
     }
-.bigPhoto{
-                width: 20vw;
-                height: auto;
-            }
+
+    .bigPhoto {
+        width: 20vw;
+        height: auto;
+    }
+
     .aboutContainer {
         width: 80vw;
         margin-left: 10vw;
-        img{
+
+        img {
             @include mobileIphone {
                 width: 80vw;
                 height: auto;
-                margin:3vw 0vw 2vw 0vw;
+                margin: 3vw 0vw 2vw 0vw;
 
             }
         }
-            #title {
-                font-size: 3.5rem;
-                font-weight: 700;
-                margin-bottom: 0.5rem;
 
-                @include mobileIphone {
-                    margin-top: 2vw;
-                    font-size: 3rem;
-                    font-weight: 600;
-                    text-align: center;
-                }
+        #title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+
+            @include mobileIphone {
+                margin-top: 2vw;
+                font-size: 3rem;
+                font-weight: 600;
+                text-align: center;
             }
+        }
+
         .aboutRow {
             margin-bottom: 7rem;
             display: flex;
             flex-direction: row;
             align-items: center;
+
             @include mobileIphone {
-                
-            flex-direction: column;
+
+                flex-direction: column;
             }
 
-            
+
 
 
 
             #desc {
                 font-size: 2rem;
                 text-align: justify;
-                margin:0vw 1vw 0vw 1vw;
+                margin: 0vw 1vw 0vw 1vw;
 
                 @include mobileIphone {
                     font-weight: 500;
