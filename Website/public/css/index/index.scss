@@ -34,7 +34,8 @@ body {
 	background: $bgColor;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 7rem;
+	padding-bottom: 9.5rem;
+	position: relative;
 
 	@include mobileIphone {
 		width: auto;
@@ -395,7 +396,7 @@ body {
 			}
 
 			#desc {
-				font-size: 1vw;
+				font-size: 1.5rem;
 				text-align: justify;
 				margin: 1.5rem 2rem 2rem 2rem;
 
