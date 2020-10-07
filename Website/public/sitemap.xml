@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://bohredom.co/</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/index.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/converter.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/contact.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/about.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/howToUse.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/2MASS/2mass.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/SWIFT_FERMI/fermi_Y.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/IRAS/iras_color.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/2MASS/2massInfo.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/SWIFT_FERMI/swift_UV.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/SWIFT_FERMI/swiftFermiInfo.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/IRAS/irasInfo.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/IRAS/iras_IR12um.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/IRAS/iras_IR100um.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bohredom.co/pages/telescopes/SWIFT_FERMI/swift_XR.html</loc>
+  <lastmod>2020-10-05T10:25:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
