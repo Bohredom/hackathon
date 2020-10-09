@@ -1,5 +1,9 @@
 # Welcome to Bohredom's Repo
 
+[<img align="left" alt="Bohredom | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="Bohredom | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="Bohredom | Website" width="22px" src="https://bohredom.co/img/bohrAtom.png" />][website]
+
 ## About Us
 We are 5 young nerds who are a little bit bohred and looking for
 to do something meaningful for us. Simply we are achieving this
@@ -18,3 +22,7 @@ visualizing the space environment and make you feel as you are visiting
 the place while you are learning about it. Our primary purpose is to make
 people, especially young generations, interested in astronomy and physics
 with a mesmerizing path.
+
+[website]: https://www.bohredom.co
+[instagram]: https://www.instagram.com/bohredom
+[linkedin]: https://www.linkedin.com/company/bohredom
