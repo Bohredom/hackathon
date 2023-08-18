@@ -2,7 +2,7 @@
 
 [<img align="left" alt="Bohredom | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="Bohredom | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img align="left" alt="Bohredom | Website" width="22px" src="https://bohredom.co/img/bohrAtomRenkli.png" />][website]
+[<img align="left" alt="Bohredom | Website" width="22px" src="https://bohredom-2020.web.app/img/bohrAtomRenkli.png" />][website]
 
 <br/>
 
